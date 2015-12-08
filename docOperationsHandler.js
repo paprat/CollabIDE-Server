@@ -121,14 +121,11 @@ module.exports = {
 	}
 	,
 	handlePush: function (request, response, userId, docId, docPath) {
-		//console.log('Received');
-        if (userId in activeClients) {
-            //console.log('Yes it is');
-				var currentTimeStamp = transformedOperations[docId].length;
+		if (userId in activeClients) {
+        		var currentTimeStamp = transformedOperations[docId].length;
 				
 				var operation = request.body;
-                //console.log(operation);
-				operation.timeStamp = currentTimeStamp;
+        		operation.timeStamp = currentTimeStamp;
 				
 
 				/*	console.log('PUSH Received');
@@ -172,7 +169,6 @@ module.exports = {
 				}
 				
 				response.end();
-			//});
 		} else {
 			module.exports.handleRegister(request, response, userId, docId, docPath);
 			response.end();
