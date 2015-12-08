@@ -122,23 +122,26 @@ module.exports = {
 	,
 	handlePush: function (request, response, userId, docId, docPath) {
 		if (userId in activeClients) {
-        		var currentTimeStamp = transformedOperations[docId].length;
-				
-				var operation = request.body;
-        		operation.timeStamp = currentTimeStamp;
-				
 
-				/*	console.log('PUSH Received');
-					console.log(userId);
-					console.log(operation);
-                */
-				
+			var operationReceived = request.body;
+			//console.log(operationReceived);
+			for (var k = 0; k < operationReceived.length; k++) {
+				var operation = operationReceived[k];
+				var currentTimeStamp = transformedOperations[docId].length;
+				operation.timeStamp = currentTimeStamp;
+
+
+				 /*console.log('PUSH Received');
+				 console.log(userId);
+				 console.log(operation);*/
+
+
 				var transformedOp = transform(operation, localOperations[docId]);
-				
+
 				if (transformedOp.type == 'REPOSITION') {
 					var flag = false;
 					for (var i = 0; i < repositionOperations[docId].length; i++) {
-						var userId = repositionOperations[docId][i].userId; 
+						var userId = repositionOperations[docId][i].userId;
 						if (userId == transformedOp.userId) {
 							flag = true;
 							repositionOperations[docId][i] = transformedOp;
@@ -148,27 +151,29 @@ module.exports = {
 						repositionOperations[docId].push(transformedOp);
 					}
 				} else {
-					transformedOperations[docId].push(transformedOp);			
+					transformedOperations[docId].push(transformedOp);
 					var obj = JSON.parse(JSON.stringify(transformedOp));
 					localOperations[docId].push(obj);
 					applyToRope(docId, transformedOp);
 					operationsNotSaved[docId].push(transformedOp);
-                    console.log(states[docId].toString());
-                }
-				
-                /*
-					console.log('Transformed Received');
-					console.log(transformedOp);
-				*/
+					//console.log(states[docId].toString());
 
-				if (transformedOperations[docId].length % THRESHOLD == 0) {
-					var fileName = docPath;
-                    //console.log(fileName);
-					writeToFile(fileName, docId);
-					operationsNotSaved[docId] = [];
+
+					/*
+					 console.log('Transformed Received');
+					 console.log(transformedOp);
+					 */
+
+					if (transformedOperations[docId].length % THRESHOLD == 0) {
+						var fileName = docPath;
+						//console.log(fileName);
+						writeToFile(fileName, docId);
+						operationsNotSaved[docId] = [];
+					}
 				}
-				
-				response.end();
+			}
+
+			response.end();
 		} else {
 			module.exports.handleRegister(request, response, userId, docId, docPath);
 			response.end();

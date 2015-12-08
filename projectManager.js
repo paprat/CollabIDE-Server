@@ -54,7 +54,7 @@ module.exports = {
                     inserted++;
                     if(inserted == items.length){
                         done = 1;
-                        dowork(req, res, con);
+                        sendResponse(req, res, con);
                     }
                 }
                 else {
