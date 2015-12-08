@@ -31,7 +31,7 @@ mongoose.connect('mongodb://localhost/CollabEdit');
 //Database Connection
 var conn = mongoose.connection;
 
-var dirName = __dirname + "\\User Projects";
+var dirName = __dirname + "\\UserProjects";
 
 app.use("/", function(req, res) {
     var parsedUrl = url.parse(req.url);

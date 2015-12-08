@@ -13,7 +13,7 @@ var userSchema = new Schema({
 });
 
 var user = mongoose.model('users', userSchema);
-var dirName = __dirname + "\\User Projects";
+var dirName = __dirname + "\\UserProjects";
 
 module.exports = {
 

@@ -23,7 +23,7 @@ var userProjectSchema = new Schema({
 var file = mongoose.model('files', fileSchema);
 var collection = mongoose.model('collection', collectionSchema);
 var userProject = mongoose.model('userProject', userProjectSchema);
-var dirName = __dirname + "\\User Projects";
+var dirName = __dirname + "\\UserProjects";
 //console.log(dirName);
 
 var data = "do shash'owania";
