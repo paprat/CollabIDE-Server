@@ -124,16 +124,17 @@ module.exports = {
 		if (userId in activeClients) {
 
 			var operationReceived = request.body;
-			for (var i = 0; i < operationReceived.length; i++) {
-				operation = operationReceived[i];
+			//console.log(operationReceived);
+			for (var k = 0; k < operationReceived.length; k++) {
+				var operation = operationReceived[k];
 				var currentTimeStamp = transformedOperations[docId].length;
 				operation.timeStamp = currentTimeStamp;
 
 
-				/*	console.log('PUSH Received');
+				 /*console.log('PUSH Received');
 				 console.log(userId);
-				 console.log(operation);
-				 */
+				 console.log(operation);*/
+
 
 				var transformedOp = transform(operation, localOperations[docId]);
 
@@ -155,19 +156,20 @@ module.exports = {
 					localOperations[docId].push(obj);
 					applyToRope(docId, transformedOp);
 					operationsNotSaved[docId].push(transformedOp);
-					console.log(states[docId].toString());
-				}
+					//console.log(states[docId].toString());
 
-				/*
-				 console.log('Transformed Received');
-				 console.log(transformedOp);
-				 */
 
-				if (transformedOperations[docId].length % THRESHOLD == 0) {
-					var fileName = docPath;
-					//console.log(fileName);
-					writeToFile(fileName, docId);
-					operationsNotSaved[docId] = [];
+					/*
+					 console.log('Transformed Received');
+					 console.log(transformedOp);
+					 */
+
+					if (transformedOperations[docId].length % THRESHOLD == 0) {
+						var fileName = docPath;
+						//console.log(fileName);
+						writeToFile(fileName, docId);
+						operationsNotSaved[docId] = [];
+					}
 				}
 			}
 

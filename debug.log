@@ -1,441 +1,4108 @@
-#include <iostream>
-#include <cstdio>
-
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#i
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#in
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#inc
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#incl
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#inclu
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#includ
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include 
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <v
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <ve
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <vec
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <vect
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <vecto
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <vector
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <vector>
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <vector>
-
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
-#include <iostream>
-#include <cstdio>
-#include <vector>
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        sort(a.begin(), a.end());
-        for (int i = 0; i < n; i++) {
-            cout << a[i] << " ";
-        }
-        cout << endl;
-    }
-}
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '1424ad6b30d8d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '2ec35ff597a10',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '191a37d2ab3e4',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '190287eab9f6b',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '2a87f67e4be',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1424ad6b30d8d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '2ec35ff597a10',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '191a37d2ab3e4',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '190287eab9f6b',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '2a87f67e4be',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: 'a1c28f720419',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: 'f207d5c20ab0',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '293272bd6b6c9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '25b4989e36284',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '153a1ae835423',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: 'a1c28f720419',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: 'f207d5c20ab0',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '293272bd6b6c9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '25b4989e36284',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '153a1ae835423',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '1f9ca8307d3b1',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '27edb24815065',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '1de09cbd379f9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '1e3edf63443e6',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 404,
+    username: 'Shobhit',
+    operationId: '81e8e71eb202',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1f9ca8307d3b1',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '27edb24815065',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1de09cbd379f9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1e3edf63443e6',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '81e8e71eb202',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '1082549ccfe35',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1082549ccfe35',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: 'dcf650981f5',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: 'dcf650981f5',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '3897d300ba3f6',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '3f0ec416c66ab',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '2ad176372f8a7',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '376f314bd366e',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '16edb452bb9bb',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '3897d300ba3f6',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerv2
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '3f0ec416c66ab',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '2ad176372f8a7',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '376f314bd366e',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '16edb452bb9bb',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '1256eda9a2127',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '2a4abdb62198f',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: 'cb3421825af6',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '27ae4a293049e',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '7eb0b76babeb',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '1256eda9a2127',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '2a4abdb62198f',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: 'cb3421825af6',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '27ae4a293049e',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '7eb0b76babeb',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '3f9932d64c86c',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '7ac56bf7569b',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '278a0cef784c3',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '2c53778290ed1',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '237fae53c471e',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '3f9932d64c86c',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '7ac56bf7569b',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '278a0cef784c3',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '2c53778290ed1',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '237fae53c471e',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '223c0f2b3cd4f',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '5940ed3e0e84',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' },
+  { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '1d61a361fdad9',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '223c0f2b3cd4f',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '5940ed3e0e84',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '1d61a361fdad9',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '176254db556a9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '176254db556a9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '528bedccd21e',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '528bedccd21e',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: 'ffae6b542df5',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: 'ffae6b542df5',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '257ee5d00cb6e',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '257ee5d00cb6e',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '30c9a7d2b43b8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '30c9a7d2b43b8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '92da9844d6ca',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '92da9844d6ca',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '1d9b372bbf993',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1d9b372bbf993',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '27d41433b481c',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '27d41433b481c',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: 'e7fa26e6bac4',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: 'e7fa26e6bac4',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: 'ff00ce169e2f',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: 'ff00ce169e2f',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: 'bda46f6a3fbf',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: 'bda46f6a3fbf',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '18e3542131e97',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '18e3542131e97',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '396fe049a4079',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '396fe049a4079',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '3d4f24f960947',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '3d4f24f960947',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '1e5a0f2439cf4',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1e5a0f2439cf4',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '7538959dd4f2',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '7538959dd4f2',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '3178d6f63cf7e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '3178d6f63cf7e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '22ac37f4aae9f',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '22ac37f4aae9f',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '19eef6ab6c8be',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '19eef6ab6c8be',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: 'e9046eff8a3a',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: 'e9046eff8a3a',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '1db4539c6392c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1db4539c6392c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '374563d6f1a2c',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '374563d6f1a2c',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '989107dc8a1c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '989107dc8a1c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: 'ad811e072ae1',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: 'ad811e072ae1',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '252e051b55427',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '252e051b55427',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '3dd3fb32d0f39',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '3dd3fb32d0f39',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '7a0e7e50ede9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '7a0e7e50ede9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '3b9362fff35a8',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '3b9362fff35a8',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '2f4581052067a',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '2f4581052067a',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '2bfac7bce8a0e',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '2bfac7bce8a0e',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '1372f33e76cee',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1372f33e76cee',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '3f05c035c99a8',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '3f05c035c99a8',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '2e4b1207c4ea',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '2e4b1207c4ea',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '38a2ac32e62e4',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '38a2ac32e62e4',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '3654cd773add5',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '3654cd773add5',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: 'e7ef8ed068da',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: 'e7ef8ed068da',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '38380de3389bf',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '38380de3389bf',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '24e32dccfb79a',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '24e32dccfb79a',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '14c25d3dd75df',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '14c25d3dd75df',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '121e081516317',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '121e081516317',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '260f4669aa942',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '260f4669aa942',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '2eb4566990574',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '2eb4566990574',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '17827cdd400ad',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '17827cdd400ad',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '23bd52059119b',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '23bd52059119b',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '52dd203d7f73',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '52dd203d7f73',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '1cffb1af2e873',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '1cffb1af2e873',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: 'c3e0371e178e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: 'c3e0371e178e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '264980bbcdf80',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '264980bbcdf80',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '1dfce25d17db6',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1dfce25d17db6',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '28deecc0dc8b9',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '28deecc0dc8b9',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '1f0b7d67442f2',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '1f0b7d67442f2',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '37eb7a0d3da52',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '37eb7a0d3da52',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 404,
+    username: 'Shobhit',
+    operationId: '2e3f6496748aa',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 404,
+  username: 'Shobhit',
+  operationId: '2e3f6496748aa',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '2371f665ddcd5',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '2371f665ddcd5',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: 'f977748002fa',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: 'f977748002fa',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '2d08a30be5469',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '2d08a30be5469',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '20df3ad98b1e2',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '20df3ad98b1e2',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: 'b24de0044d60',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: 'b24de0044d60',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '220c1446dc4e2',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '220c1446dc4e2',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '49cbf5b0d65f',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '49cbf5b0d65f',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '28b34283ad8f1',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '28b34283ad8f1',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '2edc9bc0ece12',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '2edc9bc0ece12',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '194df009751e8',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '194df009751e8',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: 'f6ca28c7e282',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: 'f6ca28c7e282',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '3a67c9eb23758',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '3a67c9eb23758',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 75,
+    username: 'Swapnil Saxena',
+    operationId: '1ad4dba752304',
+    userId: 'dragonslayerx',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerx
+{ position: 75,
+  username: 'Swapnil Saxena',
+  operationId: '1ad4dba752304',
+  userId: 'dragonslayerx',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 413,
+    username: 'Shobhit',
+    operationId: '37116346c2a6d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '37116346c2a6d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 413,
+    username: 'Shobhit',
+    operationId: '1320cd91d2236',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 413,
+    username: 'Shobhit',
+    operationId: '27a3a8f2f476f',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 413,
+    username: 'Shobhit',
+    operationId: '8744ed9b4539',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 413,
+    username: 'Shobhit',
+    operationId: '19ddb6546c667',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' },
+  { position: 413,
+    username: 'Shobhit',
+    operationId: '12d59d010022a',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '1320cd91d2236',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '27a3a8f2f476f',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '8744ed9b4539',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '19ddb6546c667',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+PUSH Received
+dragonslayerx
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '12d59d010022a',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 413,
+    username: 'Shobhit',
+    operationId: '3de222704b7a',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '3de222704b7a',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 413,
+    username: 'Shobhit',
+    operationId: '39c8882311098',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '39c8882311098',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 413,
+    username: 'Shobhit',
+    operationId: 'c667c89e91db',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 413,
+  username: 'Shobhit',
+  operationId: 'c667c89e91db',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 413,
+    username: 'Shobhit',
+    operationId: '1d0f515d9336c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '1d0f515d9336c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 413,
+    username: 'Shobhit',
+    operationId: '2ee7ee6f8bdb2',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '2ee7ee6f8bdb2',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 413,
+    username: 'Shobhit',
+    operationId: '17e85b5451def',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '17e85b5451def',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 413,
+    username: 'Shobhit',
+    operationId: '394507031bcf8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 413,
+  username: 'Shobhit',
+  operationId: '394507031bcf8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '383be2aaa4107',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '383be2aaa4107',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'be47837b3477',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'be47837b3477',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '28ec1a920f279',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '28ec1a920f279',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'eee00d62c3f0',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'eee00d62c3f0',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3171453e314eb',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3171453e314eb',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1bfd0dda24145',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1bfd0dda24145',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'e90b720dec93',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'e90b720dec93',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3e13a03878375',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3e13a03878375',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '314be551b3b4f',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '314be551b3b4f',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2d6427309ba3d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2d6427309ba3d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3961d0b587061',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3961d0b587061',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3bf28e9e366bc',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3bf28e9e366bc',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'deba3f38a62d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'deba3f38a62d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3eca34fbcd698',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3eca34fbcd698',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '248b265580aa6',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '248b265580aa6',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '14fbdf974f7de',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '14fbdf974f7de',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'c1b4e362a6f5',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'c1b4e362a6f5',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '22ec32539037b',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '22ec32539037b',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'e82fd9afcad8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'e82fd9afcad8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1e94d2aed458d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1e94d2aed458d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '14de61336cde2',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '14de61336cde2',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2548791ebeebe',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2548791ebeebe',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '24bf0db82174',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '24bf0db82174',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1036f5851f3c7',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1036f5851f3c7',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1ae8fb8dd7486',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1ae8fb8dd7486',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '19d211e5a64a1',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '19d211e5a64a1',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2cc6c90a01b9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2cc6c90a01b9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2bbb9426c3c36',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2bbb9426c3c36',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2259753075558',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2259753075558',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '27ea81a484d3',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '27ea81a484d3',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1fc5c0c54f2b9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1fc5c0c54f2b9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2313faf0aa08f',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2313faf0aa08f',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1a3b3162b0b1',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1a3b3162b0b1',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '196e2266564fc',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '196e2266564fc',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '18904cc432da6',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '18904cc432da6',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '11dd3e5bb9d59',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '11dd3e5bb9d59',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1c6ad1f6703e7',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1c6ad1f6703e7',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '377286430fb24',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '377286430fb24',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1bd73469f5a31',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1bd73469f5a31',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '35e77009392d5',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '35e77009392d5',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2b288fe1c0bd',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2b288fe1c0bd',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'e21748288918',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'e21748288918',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'c1463aec1ea3',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'c1463aec1ea3',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2847605c85299',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2847605c85299',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '4d03b0f1a19f',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '4d03b0f1a19f',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'dfc2159b9719',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'dfc2159b9719',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '593b18e47f1e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '593b18e47f1e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '249050e776f53',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '249050e776f53',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1ce3a0ef7582a',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1ce3a0ef7582a',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '124f1ddaf6707',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '124f1ddaf6707',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '36d30a2866c37',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '36d30a2866c37',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3cbbf6e8bd5f1',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3cbbf6e8bd5f1',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3491d4f89086c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3491d4f89086c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '224973ba2e932',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '224973ba2e932',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1f0e5d6c05c7c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1f0e5d6c05c7c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'fb680a7618fc',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'fb680a7618fc',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '330b09568d9c4',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '330b09568d9c4',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '314982cd38bf9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '314982cd38bf9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '24b7e8913615d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '24b7e8913615d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1bd78e7fd878d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1bd78e7fd878d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1b3fb07b064e0',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1b3fb07b064e0',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '242d1fc824a09',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '242d1fc824a09',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3fb8ae44fb18f',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3fb8ae44fb18f',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'cfd71faa1c34',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'cfd71faa1c34',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1802a44f25c5a',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1802a44f25c5a',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2b2886fa19f1d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2b2886fa19f1d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1918bd347b4e2',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1918bd347b4e2',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3b0465b6de624',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3b0465b6de624',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '135cae0ca46bf',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '135cae0ca46bf',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '26a619264a48d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '26a619264a48d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'e3290cf95aae',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'e3290cf95aae',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '37368f1177e96',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '37368f1177e96',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2cca4f96e99a4',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2cca4f96e99a4',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '309ac1e93b567',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '309ac1e93b567',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '87013e4f5216',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '87013e4f5216',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '15e6236b572f0',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '15e6236b572f0',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2cd69f0e0897',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2cd69f0e0897',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '16bbcbb1b1235',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '16bbcbb1b1235',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '22e8049b175bc',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '22e8049b175bc',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '25d0e35f00caf',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '25d0e35f00caf',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '257b1ce8664c1',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '257b1ce8664c1',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2364c6f538f69',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2364c6f538f69',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3cdedfe12a77a',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3cdedfe12a77a',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1167e6e0887a8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1167e6e0887a8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1e8b9c372c543',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1e8b9c372c543',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1f95455a9fd81',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1f95455a9fd81',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '197132eb861',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '197132eb861',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'b040e7164136',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'b040e7164136',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '194b6eabbae8a',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '194b6eabbae8a',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3581f33cf5b1c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3581f33cf5b1c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2452ae5cbdfa2',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2452ae5cbdfa2',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'e9e8bffaa566',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'e9e8bffaa566',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1b02e3bd31285',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1b02e3bd31285',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '134e47aad5b88',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '134e47aad5b88',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '26fe9e09a8919',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '26fe9e09a8919',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'ed361e7e98c3',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'ed361e7e98c3',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '124b85cc189bc',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '124b85cc189bc',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3cf88f0adf649',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3cf88f0adf649',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '399e92a9f2651',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '399e92a9f2651',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3598d0e681bbe',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3598d0e681bbe',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2fb056bc48bf6',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2fb056bc48bf6',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '225e39b622cca',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '225e39b622cca',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2349e9ddbb997',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2349e9ddbb997',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '4af6f15c5e09',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '4af6f15c5e09',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '6761d9066bac',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '6761d9066bac',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'cdf80c7ef59c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'cdf80c7ef59c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '15753f7c95b30',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '15753f7c95b30',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3d04f01cd24dd',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3d04f01cd24dd',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '37bb70c22f49b',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '37bb70c22f49b',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3e0128d5b0512',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3e0128d5b0512',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '119cd53b54c89',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '119cd53b54c89',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1caf6ab01bde8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1caf6ab01bde8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1fe412274b79b',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1fe412274b79b',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '27ac295f22be5',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '27ac295f22be5',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'f65db5797fe6',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'f65db5797fe6',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '15d5011bf8cf',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '15d5011bf8cf',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '371c273855bea',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '371c273855bea',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2cd5c6d4f18f',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2cd5c6d4f18f',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2bfcfcef5d07c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2bfcfcef5d07c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '21e8be45bb508',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '21e8be45bb508',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '38f0ab3665f43',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '38f0ab3665f43',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1594b90f552f0',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1594b90f552f0',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1ca2388fdbb1e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1ca2388fdbb1e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '548f0427029c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '548f0427029c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'fff11a99c98d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'fff11a99c98d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'd7eb90baa70f',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'd7eb90baa70f',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '28ae38086d9ed',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '28ae38086d9ed',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3f209a7779b2d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3f209a7779b2d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '19cc53e771714',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '19cc53e771714',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1fdac61f08038',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1fdac61f08038',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3a31df1a2da73',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3a31df1a2da73',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1280c605b17a7',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1280c605b17a7',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '36fef63d3d036',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '36fef63d3d036',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '13191b8764fbb',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '13191b8764fbb',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '6c178b8978f9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '6c178b8978f9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3229eb0e718e4',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3229eb0e718e4',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '342290fd76bf9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '342290fd76bf9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'a2a2a5d99ae0',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'a2a2a5d99ae0',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '50fabb925126',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '50fabb925126',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '950860ed9891',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '950860ed9891',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2486245d3f513',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2486245d3f513',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2f57690758e68',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2f57690758e68',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1482f706c9648',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1482f706c9648',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '22519a8a04118',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '22519a8a04118',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'f76536883972',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'f76536883972',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '6cac1944ec76',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '6cac1944ec76',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1ab7c192f3bd6',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1ab7c192f3bd6',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2deb02d76a5d8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2deb02d76a5d8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '12a82d60cebee',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '12a82d60cebee',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3ded56c14cb29',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3ded56c14cb29',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2a60e7fdf9ee8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2a60e7fdf9ee8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '20b53e3ad6eff',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '20b53e3ad6eff',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '833940ad14ad',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '833940ad14ad',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1a5d7aa51f3ea',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1a5d7aa51f3ea',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'd37b4c901ca',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'd37b4c901ca',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '17916ffdb975c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '17916ffdb975c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1288ba349327c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1288ba349327c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1e21dddf21d54',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1e21dddf21d54',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '13c6df7bf6cfb',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '13c6df7bf6cfb',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '8fd01a14d627',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '8fd01a14d627',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3dcd78454b46e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3dcd78454b46e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '334680f60388d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '334680f60388d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1b64e556a6688',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1b64e556a6688',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '26c3365b46617',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '26c3365b46617',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '33d3e443f8de2',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '33d3e443f8de2',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3ed4f0d8d2858',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3ed4f0d8d2858',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '16d7459f254e1',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '16d7459f254e1',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '100b96d0a520e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '100b96d0a520e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1c21170a3a2d3',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1c21170a3a2d3',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '36b1884bb283b',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '36b1884bb283b',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '29dd4ca2636f0',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '29dd4ca2636f0',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '21a82ff18ef5e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '21a82ff18ef5e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '31218a858fed8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '31218a858fed8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '321d592d3a70e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '321d592d3a70e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2f3033762815d',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2f3033762815d',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '24be8103aced8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '24be8103aced8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3fb3d52d8c45c',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3fb3d52d8c45c',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '39922e7e1445e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '39922e7e1445e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2634dbebeb8a8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2634dbebeb8a8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2dabb76719183',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2dabb76719183',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '163560ce5870f',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '163560ce5870f',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1671eca78fb44',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1671eca78fb44',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2e7efa8be007b',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2e7efa8be007b',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '75b495e84fde',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '75b495e84fde',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2d889319bc41e',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2d889319bc41e',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '19029c880bcb1',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '19029c880bcb1',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1d9a22cde58e9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1d9a22cde58e9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'b503f33dc6b4',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'b503f33dc6b4',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '8dbb8df23c3a',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '8dbb8df23c3a',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '12784c73673e3',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '12784c73673e3',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '191e1f8326e3f',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '191e1f8326e3f',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '35300bf96b8ca',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '35300bf96b8ca',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '17a08d2d33c66',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '17a08d2d33c66',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'b9a40cb17910',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'b9a40cb17910',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1ef9030d24971',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1ef9030d24971',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3f417258e89c8',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3f417258e89c8',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1228c501f8c63',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1228c501f8c63',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3b55e583fd58a',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3b55e583fd58a',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '1a98936a309a9',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '1a98936a309a9',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '2aaa2e6bbae43',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '2aaa2e6bbae43',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: 'aeae42169190',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: 'aeae42169190',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
+[ { position: 132,
+    username: 'Shobhit',
+    operationId: '3364b94b54814',
+    userId: 'dragonslayerv2',
+    type: 'REPOSITION' } ]
+PUSH Received
+dragonslayerv2
+{ position: 132,
+  username: 'Shobhit',
+  operationId: '3364b94b54814',
+  userId: 'dragonslayerv2',
+  type: 'REPOSITION',
+  timeStamp: 0 }
