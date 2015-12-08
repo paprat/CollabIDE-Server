@@ -20,8 +20,9 @@ https://dragonslayerx@bitbucket.org/dragonslayerx/collaborative-ide-client
 
 * Set up a git account and fork the repository at https://dragonslayerx@bitbucket.org/dragonslayerx/collaborative-ide-server.
 * Clone the repository using git clone to have a local copy on your system. 
-* Install mongoDB to your system. Once done, execute mongod.exe present in INSTALL_LOC\MongoDB\Server\3.0\bin\
-* Once the cloning is complete, use node.js terminal to run /bin/www. The server is now up listening at port 3000 for http requests.
+* Install mongoDB to your system. Create a new database named 'CollabEdit'.
+* Once done, execute mongod.exe present in INSTALL_LOC\MongoDB\Server\3.0\bin\
+* Once the cloning is complete, use node.js terminal to execute /bin/www. The server is now up listening at port 3000 for http requests.
 
 * Yipee... Done!!!. Introduce changes, add features, fix bugs and send a pull request to contribute. 
 
