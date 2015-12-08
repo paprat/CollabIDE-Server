@@ -1,10 +1,4 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var queryString = require('querystring');
-var url = require('url');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 
@@ -14,11 +8,6 @@ var fileSchema = new Schema({
     fileID: String,
     fileName: String,
     path: String
-});
-
-var fileUserSchema = new Schema({
-    userID: String,
-    fileID: String
 });
 
 var collectionSchema = new Schema({
@@ -44,9 +33,7 @@ crypto.createHash('md5').update(data).digest("hex");
 module.exports = {
     file: mongoose.model('files', fileSchema),
     view: function(req, res, dirPath){
-        //console.log(dirPath);
         var newdirPath = "";
-        //console.log(req.body);
         for(var i = 0; i  < dirPath.length; ++i){
             if(dirPath.charAt(i) == '.'){
                 newdirPath += "\\";
@@ -56,26 +43,12 @@ module.exports = {
             }
         }
         var newPath = dirName + newdirPath;
-        //console.log(fs.lstatSync(newPath).isDirectory());
-        // mkdirp(newPath, function(err) {
         fs.readdir(newPath, function(err, items) {
             var con = [];
-            //items.forEach(function(listItem){
-            //    var tmpPath = newPath + "\\" + listItem;
-            //    console.log(tmpPath)
-            //    if(fs.lstatSync(tmpPath).isDirectory())
-            //        con.push({'name': listItem, 'path': dirPath, 'type': 'COLLECTION'});
-            //    else {
-            //        file.find({fileName: listItem}, function(err, newFile){
-            //            con.push({'name': listItem, 'path': dirPath, 'type': 'DOC', 'identifier': newFile.fileID});
-            //        })
-            //    }
-            //});
             var inserted = 0;
             var done = 0;
             for(var i = 0; i < items.length; ++i){
                 var tmpPath = newPath + "\\" + items[i];
-                //console.log(tmpPath)
                 if(fs.lstatSync(tmpPath).isDirectory()) {
                     con.push({'name': items[i], 'path': dirPath, 'type': 'COLLECTION'});
                     inserted++;
@@ -91,7 +64,7 @@ module.exports = {
                             inserted++;
                             if(inserted == items.length){
                                 done = 1;
-                                dowork(req, res, con);
+                               sendResponse(req, res, con);
                             }
                         });
 
@@ -101,13 +74,12 @@ module.exports = {
             }
             if(done == 0) {
                 if (inserted == items.length) {
-                    dowork(req, res, con);
+                    sendResponse(req, res, con);
                 }
             }
-
         });
-        //});
     },
+
     addNode: function(req, res,dirPath){
         if(req.body.type == 'DOC'){
             var newdirPath = "";
@@ -121,8 +93,6 @@ module.exports = {
                 }
             }
             var newPath = dirName + newdirPath;
-            //console.log(req.body);
-            //console.log(newPath);
             var ide = crypto.createHash('md5').update(req.body.name).digest("hex")
             new file({
                 fileID: ide,
@@ -137,7 +107,6 @@ module.exports = {
                 else{
                     fs.writeFile(newPath+"\\"+req.body.name, "", function(er){
                         var toBeSent = {'name': req.body.name, 'path': req.body.path, 'type': 'DOC', 'identifier': ide};
-                        //console.log(JSON.stringify(toBeSent));
                         res.write(JSON.stringify(toBeSent), function(errr){res.end();});
                     });
                 }
@@ -156,12 +125,10 @@ module.exports = {
                 }
             }
             var newPath = dirName + newdirPath;
-            //console.log(req.body);
             new collection({
                 collectionName: req.body.name,
                 path: newPath
             }).save(function(err, newCollection){
-                //console.log(newCollection);
                 var userId = "";
                 for(var i = 0; i < dirPath.length; ++i){
                     if(dirPath.charAt(i) == '.')
@@ -187,9 +154,8 @@ module.exports = {
     }
 };
 
-function dowork(req, res, con) {
-    var content = JSON.stringify(con);
-    //console.log(content);
+function sendResponse(req, res, collectionContent) {
+    var content = JSON.stringify(collectionContent);
     res.write(content, function (er) {
         res.end();
     });

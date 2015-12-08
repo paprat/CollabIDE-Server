@@ -31,6 +31,10 @@ module.exports = {
                     res.end(JSON.stringify(
                         [{'project': {'name' : entry.projectName, 'path' : entry.projectPath, 'type' : entry.type}, 'notificationMessage': entry.value}]
                     ));
+
+                    //removes all seen notifications from the database
+                    notification.remove({userID: userId}, function(err){
+                    });
             });
         });
     },
