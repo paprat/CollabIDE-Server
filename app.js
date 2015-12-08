@@ -43,13 +43,13 @@ app.use("/", function(req, res) {
     switch(pathName) {
         //Doc Operations
         case '/register': {
-            passFileToDoc(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handleRegister);
+            passFileToHandler(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handleRegister);
         } break;
         case '/get_operation': {
             docOperationsHandler.handleGet(req, res, parsedQuery.userId, parsedQuery.docId);
             break;
         } case '/push_operation': {
-            passFileToDoc(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handlePush);
+            passFileToHandler(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handlePush);
         } break;
 
         //ProjectManagement Handler
@@ -72,9 +72,8 @@ app.use("/", function(req, res) {
     }
 });
 
-function passFileToDoc(req, res, userId, docId, handler) {
+function passFileToHandler(req, res, userId, docId, handler) {
     getDocPath(docId, function(docPath) {
-        console.log("docPath: " + docPath);
         handler(req, res, userId, docId, docPath);
     });
 }
@@ -82,7 +81,6 @@ function passFileToDoc(req, res, userId, docId, handler) {
 function getDocPath(docId, callback) {
      projectManager.file.find({fileID: docId}, function(err, data){
         data.forEach(function(entry){
-            console.log(dirName);
             var resolvedDocPath = dirName + resolve(entry.path);
             resolvedDocPath += '\\' + entry.fileName;
             callback(resolvedDocPath);
