@@ -1,10 +1,4 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var queryString = require('querystring');
-var url = require('url');
 
 var Schema  = mongoose.Schema;
 
@@ -21,34 +15,38 @@ var auth = require('./auth');
 
 module.exports = {
     getSharedProjects: function(req, res, userId){
-        sharedProject.find({userID: userId}, function(err, result){
-            res.write(JSON.stringify(result), function(er){res.end();});
+        sharedProject.find({userID: userId}, function(err, projects){
+            res.write(JSON.stringify(projects), function(err){
+                res.end();
+            });
         });
     },
-    share: function(req, res, docId, userId, shUser){
-        var pName = '';
-        var pPath = '.';
-        var done = 0;
-        for(var i = 0; i < docId.length; ++i){
-            if(docId.charAt(i) == '.'){
-                done++;
-            }
-            else if(done == 1){
-                pPath += docId.charAt(i);
-            }
-            else if(done == 2){
-                pName += docId.charAt(i);
+
+    share: function(req, res, project, userWhoShared, userSharedWith){
+        //Resolve project in projectPath and projectName
+        var projectName = '';
+        var projectPath = '.';
+        var level = 0;
+        for(var i = 0; i < project.length; ++i){
+            if(project.charAt(i) == '.'){
+                level++;
+            } else if(level == 1){
+                projectPath += project.charAt(i);
+            } else if(level == 2){
+                projectName += project.charAt(i);
             }
         }
-        auth.user.find({userID: userId}, function(err, newU) {
-            newU.forEach(function (newUser) {
+        //
+
+        auth.user.find({userID: userWhoShared}, function(err, users) {
+            users.forEach(function (entry) {
                 new sharedProject({
-                    userID: shUser,
-                    path: pPath,
-                    name: pName,
+                    userID: userSharedWith,
+                    path: projectPath,
+                    name: projectName,
                     type: 'COLLECTION'
-                }).save(function (err, newData) {
-                    notification.addNewNotification(req, res, newUser, pPath, pName, shUser);
+                }).save(function (err, data) {
+                    notification.addNewNotification(req, res, entry, projectPath, projectName, userSharedWith);
                 });
             });
         });
@@ -57,6 +55,8 @@ module.exports = {
 
 function getSharedProjects(req, res){
     sharedProject.find({userID: req.body.userId}, function(err, result){
-        res.write(result, function(er){res.end();});
+        res.write(result, function(err){
+            res.end();
+        });
     });
 }
