@@ -33,6 +33,7 @@ module.exports = {
             });
         });
     },
+
     logIn: function(req, res) {
         user.find({username: req.body.username}, function (err, curUser) {
             if (curUser.length == 0) {
@@ -41,9 +42,6 @@ module.exports = {
                 });
             }
             else {
-                //curUser = JSON.parse(curUser);
-                //console.log(curUser);
-
                 if(curUser.length == 1) {
                     curUser.forEach(function (item) {
                         if (item.password == req.body.password) {
@@ -74,6 +72,7 @@ module.exports = {
             })
         });
     },
+
     signUp: function(req, res) {
         //console.log(req.body);
         user.find({username: req.body.username}, function (err, Ok) {
@@ -105,12 +104,10 @@ module.exports = {
                 });
             }
             else {
-                //0ole.log('User Already Exists');
                 res.write("{'statusCode' : '404', 'statusMessage' : 'User Already Exists'}", function (er) {
                     res.end();
                 });
             }
         });
-        //res.end();
     }
 };

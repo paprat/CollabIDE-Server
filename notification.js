@@ -30,22 +30,18 @@ module.exports = {
             res.end();
         })
     },
-    getNotifications: function(req, res, userId)
+    
+	getNotifications: function(req, res, userId)
     {
         notification.find({userID: userId}, function (err, foound) {
-            //res.write(JSON.stringify(curNotification), function (er) {
-            //    res.end()
-            //});
             foound.forEach(function(found){
-                //notification.remove(found, function(erx){
                     res.end(JSON.stringify(
                         [{'project': {'name' : found.projectName, 'path' : found.projectPath, 'type' : found.type}, 'notificationMessage': found.value}]
                     ));
-                //});
-
             });
         });
     },
+	
     clearAll: function(req, res, userId){
         console.log(userId);
 
