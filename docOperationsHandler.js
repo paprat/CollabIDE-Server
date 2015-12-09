@@ -29,7 +29,12 @@ console.log = function(d) { //
 //Modules exported
 module.exports = {
 	handleRegister: function (request, response, userId, docId, docPath) {
-		activeClients[userId]++;
+		if (userId in activeClients) {
+			activeClients[userId]++;
+		} else {
+			activeClients[userId] = 1;
+		}
+
 		if (docId in openFileTable) {
 			
 			//Doc Already exists in the openFileTable
@@ -86,7 +91,13 @@ module.exports = {
 	handleUnregister: function (request, response, userId, docId, docPath) {
 		if (userId in activeClients) {
 			if (docId in openFileTable) {
-				
+
+				/*console.log(userId);
+				console.log(activeClients[userId]);
+
+				console.log(docId);
+				console.log(openFileTable[docId]);*/
+
 				//reduce no of sessions opened by a client
 				activeClients[userId]--;
 				//remove client is session count drops to zero
