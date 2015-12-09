@@ -81,6 +81,42 @@ module.exports = {
 		//console.log(states[docId].toString());
 	}
 	,
+	handleUnregister: function (request, response, userId, docId, docPath) {
+		if (userId in activeClients) {
+			if (docId in openFileTable) {
+				
+				//reduce no of sessions opened by a client
+				activeClients[userId]--;
+				//remove client is session count drops to zero
+				if (activeClients[userId] == 0) {
+					activeClients.erase(userId);
+				}
+				
+				//reduce no of clients on a doc
+				openFileTable[docId]--;
+				//remove doc from openFileTable if clientCount drops to zero
+				if (openFileTable[docId] == 0) {
+					writeToFile(docPath, docId);
+					//stop writeCallback
+					
+					//Destroy all datastructures
+					states.erase(docId);
+					transformedOperations.erase(docId);
+					repositionOperations.erase(docId);
+					localOperations.erase(docId);
+					operationsNotSaved.erase(docId);
+					lastSync.erase(docId);
+					
+					openFileTable.erase(docId);
+				}
+			} else {
+				console.log('Illegal Unregister Request');
+			}
+		} else {
+			console.log('Illegal Unregister Request');
+		}
+	}
+	,
 	handleGet: function (request, response, userId, docId, docPath) {
 		if (userId in activeClients) { 
 			var prevTimeStamp = lastSync[docId][userId];
