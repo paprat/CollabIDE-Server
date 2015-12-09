@@ -12,6 +12,8 @@ var localOperations = {};
 var transformedOperations = {};
 var repositionOperations = {};
 
+var intervalObj = {};
+
 var THRESHOLD_TIME_MILLISECONDS = 12000;
 var operationsNotSaved = {};
 
@@ -58,7 +60,7 @@ module.exports = {
 			var contents = fs.readFileSync(fileName).toString();
 			
 			//Write file after every two THRESHOLD_TIME_MILLISECONDS
-			setInterval(writeCallback, THRESHOLD_TIME_MILLISECONDS, docPath, docId);
+			intervalObj[docId] = setInterval(writeCallback, THRESHOLD_TIME_MILLISECONDS, docPath, docId);
 			
 			//Initialises the Rope with contents of the file 
 			states[docId] = rope('');
@@ -89,7 +91,7 @@ module.exports = {
 				activeClients[userId]--;
 				//remove client is session count drops to zero
 				if (activeClients[userId] == 0) {
-					activeClients.erase(userId);
+					delete activeClients[userId];
 				}
 				
 				//reduce no of clients on a doc
@@ -98,16 +100,17 @@ module.exports = {
 				if (openFileTable[docId] == 0) {
 					writeToFile(docPath, docId);
 					//stop writeCallback
+					clearInterval(intervalObj[docId]);
 					
 					//Destroy all datastructures
-					states.erase(docId);
-					transformedOperations.erase(docId);
-					repositionOperations.erase(docId);
-					localOperations.erase(docId);
-					operationsNotSaved.erase(docId);
-					lastSync.erase(docId);
+					delete states[docId];
+					delete transformedOperations[docId];
+					delete repositionOperations[docId];
+					delete localOperations[docId];
+					delete operationsNotSaved[docId];
+					delete lastSync[docId];
 					
-					openFileTable.erase(docId);
+					delete openFileTable[docId];
 				}
 			} else {
 				console.log('Illegal Unregister Request');
