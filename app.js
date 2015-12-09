@@ -46,9 +46,9 @@ app.use("/", function(req, res) {
             passFileToHandler(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handleRegister);
         } break;
         case '/get_operation': {
-            docOperationsHandler.handleGet(req, res, parsedQuery.userId, parsedQuery.docId);
-            break;
-        } case '/push_operation': {
+			passFileToHandler(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handleGet);
+		} break;
+        case '/push_operation': {
             passFileToHandler(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handlePush);
         } break;
 

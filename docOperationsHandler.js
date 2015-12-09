@@ -1,70 +1,71 @@
 var rope = require('./rope');
 var fs = require('fs');
-
-var THRESHOLD = 1;
+var util = require('util');
 
 var activeClients = {};
 var openFileTable = {};
 
-var localOperations = {};
-var transformedOperations = {};
-var operationsNotSaved = {};
-
-var repositionOperations = {};
-
 var lastSync = {};
 var states = {};
 
-var fs = require('fs');
-var util = require('util');
+var localOperations = {};
+var transformedOperations = {};
+var repositionOperations = {};
+
+var THRESHOLD_TIME_MILLISECONDS = 12000;
+var operationsNotSaved = {};
+
+//Redirects the output stream to file debug.log
 var log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'w'});
 var log_stdout = process.stdout;
-
 console.log = function(d) { //
   log_file.write(util.format(d) + '\n');
   log_stdout.write(util.format(d) + '\n');
 };
 
+
+//Modules exported
 module.exports = {
 	handleRegister: function (request, response, userId, docId, docPath) {
 		activeClients[userId]++;
 		if (docId in openFileTable) {
-			//console.log('Doc already exists.');
+			
+			//Doc Already exists in the openFileTable
 			openFileTable[docId]++;
 			var content = states[docId].toString();
-			for (operation in operationsNotSaved [docId]) {
-				applyToRope(states[docId], operation);
-			}
-
-			var fileName = docPath;
-            //console.log(fileName);
-			
-			writeToFile(fileName, docId);
-			operationsNotSaved[docId] = [];
-			
 			var length = transformedOperations[docId].length;
+			
 			lastSync[docId][userId] = length;
+			
+			//Send the contents of the file to the client
 			response.end(states[docId].toString());
 		} else {
-			//console.log('New doc created.');
+			
+			//New doc to be inserted in openFileTable
 			openFileTable[docId] = 1;
 			
+			//Initialises the data structures
 			transformedOperations[docId] = [];
 			repositionOperations[docId] = [];
 			localOperations[docId] = [];
 			operationsNotSaved[docId] = [];
 			
+			//Set lastSync of the newly created doc to 0 i.e. no operations upto now
 			lastSync[docId] = {};
 			lastSync[docId][userId] = 0;
 			
 			var fileName = docPath;
-			
 			var contents = fs.readFileSync(fileName).toString();
 			
+			//Write file after every two THRESHOLD_TIME_MILLISECONDS
+			setInterval(writeCallback, THRESHOLD_TIME_MILLISECONDS, docPath, docId);
+			
+			//Initialises the Rope with contents of the file 
 			states[docId] = rope('');
 			var count = 0;
 			for (var i = 0; i < contents.length; i++) {
-				if ( i < contents.length-1 && contents[i] == '\r' && contents[i+1] == '\n') {
+				//Take care of /r/n issue
+				if (i < contents.length-1 && contents[i] == '\r' && contents[i+1] == '\n') {
 					states[docId].insert(i-count, '\n');
 					count++;
 					i++;
@@ -73,13 +74,14 @@ module.exports = {
 				}
 			}
 			
+			//Send the contents of the file to the client
 			response.end(states[docId].toString());
 		}
 		//console.log("-------------------------");
 		//console.log(states[docId].toString());
 	}
 	,
-	handleGet: function (request, response, userId, docId) {
+	handleGet: function (request, response, userId, docId, docPath) {
 		if (userId in activeClients) { 
 			var prevTimeStamp = lastSync[docId][userId];
 			var currentTimeStamp = transformedOperations[docId].length;
@@ -90,8 +92,8 @@ module.exports = {
 				//console.log(sessionBuffers[docId].length);
 			*/
 					
+			//Operations since the last time the client synced with the server
 			var operationsNotSynced = [];
-			
 			var size = transformedOperations[docId].length;
 			for (var i = 0; i < size; i++) {
 				var operation =  transformedOperations[docId][i]; 
@@ -100,7 +102,7 @@ module.exports = {
 				}
 			}
 			
-			
+			//Send operations not yet synced with the client
 			if (operationsNotSynced.length > 0) {
 				var res = {};
 				res.last_sync = currentTimeStamp;
@@ -108,6 +110,7 @@ module.exports = {
 				lastSync[docId][userId] = currentTimeStamp;
 				response.end(JSON.stringify(res));
 			} else {
+				//If no operations to be pushed, tell the client about the cursor positions of other clients on the doc
 				var res = {};
 				res.last_sync = currentTimeStamp;
 				res.operations = repositionOperations[docId];
@@ -115,7 +118,7 @@ module.exports = {
 			}
 			
 		} else {
-			module.exports.handleRegister(request, response, userId, docId);
+			module.exports.handleRegister(request, response, userId, docId, docPath);
 			response.end();
 		}
 	}
@@ -124,17 +127,12 @@ module.exports = {
 		if (userId in activeClients) {
 
 			var operationReceived = request.body;
+			//Bulk push request received from the server
 			//console.log(operationReceived);
 			for (var k = 0; k < operationReceived.length; k++) {
 				var operation = operationReceived[k];
 				var currentTimeStamp = transformedOperations[docId].length;
 				operation.timeStamp = currentTimeStamp;
-
-
-				 /*console.log('PUSH Received');
-				 console.log(userId);
-				 console.log(operation);*/
-
 
 				var transformedOp = transform(operation, localOperations[docId]);
 
@@ -142,37 +140,43 @@ module.exports = {
 					var flag = false;
 					for (var i = 0; i < repositionOperations[docId].length; i++) {
 						var userId = repositionOperations[docId][i].userId;
+						//update cursor position
 						if (userId == transformedOp.userId) {
 							flag = true;
 							repositionOperations[docId][i] = transformedOp;
 						}
 					}
+					//If the users reposition operation reached server for the first time
 					if (!flag) {
 						repositionOperations[docId].push(transformedOp);
 					}
 				} else {
+					//Non-idempotent operations
+					/*
+						console.log('PUSH Received');
+						console.log(userId);
+						console.log(operation);
+					*/
+					
+					//Apply operational transform on the state received
 					transformedOperations[docId].push(transformedOp);
+					
 					var obj = JSON.parse(JSON.stringify(transformedOp));
 					localOperations[docId].push(obj);
+					
+					//Update the server state of the doc
 					applyToRope(docId, transformedOp);
 					operationsNotSaved[docId].push(transformedOp);
+					
 					//console.log(states[docId].toString());
-
-
+					
 					/*
-					 console.log('Transformed Received');
-					 console.log(transformedOp);
-					 */
-
-					if (transformedOperations[docId].length % THRESHOLD == 0) {
-						var fileName = docPath;
-						//console.log(fileName);
-						writeToFile(fileName, docId);
-						operationsNotSaved[docId] = [];
-					}
+						console.log('Transformed Received');
+						console.log(userId);
+						console.log(transformedOp);
+					*/
 				}
 			}
-
 			response.end();
 		} else {
 			module.exports.handleRegister(request, response, userId, docId, docPath);
@@ -197,6 +201,7 @@ function applyToRope(docId, operation) {
 	}
 }
 
+//Operational Transforms
 function transformOperation(opr1, opr2, flag) {
 	var transformed1 = JSON.parse(JSON.stringify(opr2));
 	
@@ -265,6 +270,7 @@ function transformOperation(opr1, opr2, flag) {
 	return transformed1;
 }
 
+//Compound Operational Transform
 function transform(operation, Buffer) {
 	for (var i = operation.lastSyncStamp; i < Buffer.length; i++) {
 		var op = Buffer[i];
@@ -278,8 +284,14 @@ function transform(operation, Buffer) {
 	return operation;
 }
 
-function writeToFile(fileName, docId) {
-	fs.writeFile(fileName, states[docId].toString(), function(err) {
+//Take backup of file after every THRESHOLD_TIME_MILLISECONDS time.
+function writeCallback(docPath, docId) {
+	writeToFile(docPath, docId);
+	operationsNotSaved[docId] = []; // clear OperationsNotSaved
+}
+
+function writeToFile(docPath, docId) {
+	fs.writeFile(docPath, states[docId].toString(), function(err) {
 		if(err) {
 			return console.log(err);
 		}
