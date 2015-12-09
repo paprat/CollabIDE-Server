@@ -118,10 +118,11 @@ module.exports = {
 		} else {
 			console.log('Illegal Unregister Request');
 		}
+		response.end();
 	}
 	,
 	handleGet: function (request, response, userId, docId, docPath) {
-		if (userId in activeClients) { 
+		if (userId in activeClients && docId in openFileTable) {
 			var prevTimeStamp = lastSync[docId][userId];
 			var currentTimeStamp = transformedOperations[docId].length;
 			
@@ -163,7 +164,7 @@ module.exports = {
 	}
 	,
 	handlePush: function (request, response, userId, docId, docPath) {
-		if (userId in activeClients) {
+		if (userId in activeClients && docId in openFileTable) {
 
 			var operationReceived = request.body;
 			//Bulk push request received from the server
