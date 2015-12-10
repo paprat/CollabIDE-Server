@@ -1,6 +1,8 @@
 var rope = require('./rope');
 var fs = require('fs');
 var util = require('util');
+var operationalTransform = require('./OT');
+
 
 var activeClients = {};
 var openFileTable = {};
@@ -11,6 +13,8 @@ var states = {};
 var localOperations = {};
 var transformedOperations = {};
 var repositionOperations = {};
+
+var intervalObj = {};
 
 var THRESHOLD_TIME_MILLISECONDS = 12000;
 var operationsNotSaved = {};
@@ -27,7 +31,12 @@ console.log = function(d) { //
 //Modules exported
 module.exports = {
 	handleRegister: function (request, response, userId, docId, docPath) {
-		activeClients[userId]++;
+		if (userId in activeClients) {
+			activeClients[userId]++;
+		} else {
+			activeClients[userId] = 1;
+		}
+
 		if (docId in openFileTable) {
 			
 			//Doc Already exists in the openFileTable
@@ -58,7 +67,7 @@ module.exports = {
 			var contents = fs.readFileSync(fileName).toString();
 			
 			//Write file after every two THRESHOLD_TIME_MILLISECONDS
-			setInterval(writeCallback, THRESHOLD_TIME_MILLISECONDS, docPath, docId);
+			intervalObj[docId] = setInterval(writeCallback, THRESHOLD_TIME_MILLISECONDS, docPath, docId);
 			
 			//Initialises the Rope with contents of the file 
 			states[docId] = rope('');
@@ -81,8 +90,52 @@ module.exports = {
 		//console.log(states[docId].toString());
 	}
 	,
+	handleUnregister: function (request, response, userId, docId, docPath) {
+		if (userId in activeClients) {
+			if (docId in openFileTable) {
+
+				/*console.log(userId);
+				console.log(activeClients[userId]);
+
+				console.log(docId);
+				console.log(openFileTable[docId]);*/
+
+				//reduce no of sessions opened by a client
+				activeClients[userId]--;
+				//remove client is session count drops to zero
+				if (activeClients[userId] == 0) {
+					delete activeClients[userId];
+				}
+				
+				//reduce no of clients on a doc
+				openFileTable[docId]--;
+				//remove doc from openFileTable if clientCount drops to zero
+				if (openFileTable[docId] == 0) {
+					writeToFile(docPath, docId);
+					//stop writeCallback
+					clearInterval(intervalObj[docId]);
+					
+					//Destroy all datastructures
+					delete states[docId];
+					delete transformedOperations[docId];
+					delete repositionOperations[docId];
+					delete localOperations[docId];
+					delete operationsNotSaved[docId];
+					delete lastSync[docId];
+					
+					delete openFileTable[docId];
+				}
+			} else {
+				console.log('Illegal Unregister Request');
+			}
+		} else {
+			console.log('Illegal Unregister Request');
+		}
+		response.end();
+	}
+	,
 	handleGet: function (request, response, userId, docId, docPath) {
-		if (userId in activeClients) { 
+		if (userId in activeClients && docId in openFileTable) {
 			var prevTimeStamp = lastSync[docId][userId];
 			var currentTimeStamp = transformedOperations[docId].length;
 			
@@ -124,7 +177,7 @@ module.exports = {
 	}
 	,
 	handlePush: function (request, response, userId, docId, docPath) {
-		if (userId in activeClients) {
+		if (userId in activeClients && docId in openFileTable) {
 
 			var operationReceived = request.body;
 			//Bulk push request received from the server
@@ -134,7 +187,7 @@ module.exports = {
 				var currentTimeStamp = transformedOperations[docId].length;
 				operation.timeStamp = currentTimeStamp;
 
-				var transformedOp = transform(operation, localOperations[docId]);
+				var transformedOp = operationalTransform.transform(operation, localOperations[docId]);
 
 				if (transformedOp.type == 'REPOSITION') {
 					var flag = false;
@@ -199,89 +252,6 @@ function applyToRope(docId, operation) {
 	} else {
 		console.log('Operation is undefined');
 	}
-}
-
-//Operational Transforms
-function transformOperation(opr1, opr2, flag) {
-	var transformed1 = JSON.parse(JSON.stringify(opr2));
-	
-	if (opr1.type == 'ERASE' && opr2.type == 'ERASE') {
-		if (flag) {
-			if (opr1.position < opr2.position) {
-				transformed1.position = opr2.position-1;
-			} 
-		} else {
-			if (opr1.position <= opr2.position) {
-				transformed1.position = opr2.position-1;
-			}
-		}
-	} else if (opr1.type == 'INSERT' && opr2.type == 'INSERT') {
-		if (flag) {
-			if (opr1.position < opr2.position) {
-				transformed1.position = opr2.position+1;
-			} 
-		} else {
-			if (opr1.position <= opr2.position) {
-				transformed1.position = opr2.position+1;
-			}
-		}
-	} else if (opr1.type == 'INSERT' && opr2.type == 'ERASE') {
-		if (flag) {
-			if (opr1.position < opr2.position) {
-				transformed1.position = opr2.position+1;
-			} 
-		} else {
-			if (opr1.position <= opr2.position) {
-				transformed1.position = opr2.position+1;
-			}
-		}
-	} else if (opr1.type == 'ERASE' && opr2.type == 'INSERT') {
-		if (flag) {
-			if (opr1.position < opr2.position) {
-				transformed1.position = opr2.position-1;
-			} 
-		} else {
-			if (opr1.position <= opr2.position) {
-				transformed1.position = opr2.position-1;
-			}
-		}
-	} else if (opr1.type == 'ERASE' && opr2.type == 'REPOSITION') {
-		if (flag) {
-			if (opr1.position < opr2.position) {
-				transformed1.position = opr2.position-1;
-			} 
-		} else {
-			if (opr1.position <= opr2.position) {
-				transformed1.position = opr2.position-1;
-			}
-		}
-	} else if (opr1.type == 'INSERT' && opr2.type == 'REPOSITION') {
-		if (flag) {
-			if (opr1.position < opr2.position) {
-				transformed1.position = opr2.position+1;
-			} 
-		} else {
-			if (opr1.position <= opr2.position) {
-				transformed1.position = opr2.position+1;
-			}
-		}
-	} 
-	
-	return transformed1;
-}
-
-//Compound Operational Transform
-function transform(operation, Buffer) {
-	for (var i = operation.lastSyncStamp; i < Buffer.length; i++) {
-		var op = Buffer[i];
-		if (op.userId != operation.userId) {
-			var transformed1 = transformOperation(op, operation, true);
-			var transformed2 = transformOperation(operation, op, false);
-			operation = transformed1;
-			Buffer[i] = transformed2;
-		}
-	}
-	return operation;
 }
 
 //Take backup of file after every THRESHOLD_TIME_MILLISECONDS time.

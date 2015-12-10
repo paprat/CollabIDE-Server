@@ -45,6 +45,9 @@ app.use("/", function(req, res) {
         case '/register': {
             passFileToHandler(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handleRegister);
         } break;
+		case '/unregister': {
+            passFileToHandler(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handleUnregister);
+        } break;
         case '/get_operation': {
 			passFileToHandler(req, res, parsedQuery.userId, parsedQuery.docId, docOperationsHandler.handleGet);
 		} break;
