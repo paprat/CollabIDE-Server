@@ -1,0 +1,2882 @@
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 0,
+  charToInsert: 'i',
+  operationId: '5smgna7q89so01kkorq21b7q0p',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 0 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 0,
+  charToInsert: 'i',
+  operationId: '5smgna7q89so01kkorq21b7q0p',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 0 }
+STATE: 
+i
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 1,
+  charToInsert: 'n',
+  operationId: '4mtdnelh32uhgu0rojlt1ulol1',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 1 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 1,
+  charToInsert: 'n',
+  operationId: '4mtdnelh32uhgu0rojlt1ulol1',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 1 }
+STATE: 
+in
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 2,
+  charToInsert: 't',
+  operationId: 'n1mt7ia02ta3v0j0cp21cddis7',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 2 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 2,
+  charToInsert: 't',
+  operationId: 'n1mt7ia02ta3v0j0cp21cddis7',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 2 }
+STATE: 
+int
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 3,
+  charToInsert: ' ',
+  operationId: '1l9oc1lbb5ktjris0i4uevtvb5',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 3 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 3,
+  charToInsert: ' ',
+  operationId: '1l9oc1lbb5ktjris0i4uevtvb5',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 3 }
+STATE: 
+int 
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 4,
+  charToInsert: 'm',
+  operationId: 'pq0duqvbk3ebhs5p89sh492020',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 4 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 4,
+  charToInsert: 'm',
+  operationId: 'pq0duqvbk3ebhs5p89sh492020',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 4 }
+STATE: 
+int m
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 5,
+  charToInsert: 'a',
+  operationId: '1c0r84l7n143o0tcsnjld4l9g4',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 5 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 5,
+  charToInsert: 'a',
+  operationId: '1c0r84l7n143o0tcsnjld4l9g4',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 5 }
+STATE: 
+int ma
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 6,
+  charToInsert: 'i',
+  operationId: 'iput1me4egna7nmj6s71qdc5j2',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 6 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 6,
+  charToInsert: 'i',
+  operationId: 'iput1me4egna7nmj6s71qdc5j2',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 6 }
+STATE: 
+int mai
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 7,
+  charToInsert: 'n',
+  operationId: '4qa08jo92q35t3n2sn8hahi2lr',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 7 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 7,
+  charToInsert: 'n',
+  operationId: '4qa08jo92q35t3n2sn8hahi2lr',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 7 }
+STATE: 
+int main
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 8,
+  charToInsert: '(',
+  operationId: 'p1455u5u4nk1b0sf2gdg2g8bso',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 8 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 8,
+  charToInsert: '(',
+  operationId: 'p1455u5u4nk1b0sf2gdg2g8bso',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 8 }
+STATE: 
+int main(
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 9,
+  charToInsert: ')',
+  operationId: 'nkof5p05pbrpnpo44495o7teu1',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 9 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 9,
+  charToInsert: ')',
+  operationId: 'nkof5p05pbrpnpo44495o7teu1',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 9 }
+STATE: 
+int main()
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 10,
+  charToInsert: ' ',
+  operationId: '8oop4g0837mp4iuulpkbda41lj',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 10 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 10,
+  charToInsert: ' ',
+  operationId: '8oop4g0837mp4iuulpkbda41lj',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 10 }
+STATE: 
+int main() 
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 11,
+  charToInsert: '{',
+  operationId: 'vah82h7vhbalf01tgi31907u3u',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 11 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 11,
+  charToInsert: '{',
+  operationId: 'vah82h7vhbalf01tgi31907u3u',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 11 }
+STATE: 
+int main() {
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 12,
+  charToInsert: '\n',
+  operationId: '6st7jq5234giremk5lnh5lhhlf',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 12 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 12,
+  charToInsert: '\n',
+  operationId: '6st7jq5234giremk5lnh5lhhlf',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 12 }
+STATE: 
+int main() {
+
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 13,
+  charToInsert: ' ',
+  operationId: '35s475h13o0f3assus4ug3h0ik',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 13 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 13,
+  charToInsert: ' ',
+  operationId: '35s475h13o0f3assus4ug3h0ik',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 13 }
+STATE: 
+int main() {
+ 
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 14,
+  charToInsert: ' ',
+  operationId: '55q7ev34rfolmb4q0ljp8vrggc',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 14 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 14,
+  charToInsert: ' ',
+  operationId: '55q7ev34rfolmb4q0ljp8vrggc',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 14 }
+STATE: 
+int main() {
+  
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 15,
+  charToInsert: ' ',
+  operationId: '9ad24rf08q9he2rmiqkm6e1b43',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 15 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 15,
+  charToInsert: ' ',
+  operationId: '9ad24rf08q9he2rmiqkm6e1b43',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 15 }
+STATE: 
+int main() {
+   
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 16,
+  charToInsert: ' ',
+  operationId: '7hp1g6co66ccfg3u8hkt2pia40',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 16 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 16,
+  charToInsert: ' ',
+  operationId: '7hp1g6co66ccfg3u8hkt2pia40',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 16 }
+STATE: 
+int main() {
+    
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 17,
+  charToInsert: '\n',
+  operationId: 'clu1adrkpo9nd815cq92l8p18n',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 17 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 17,
+  charToInsert: '\n',
+  operationId: 'clu1adrkpo9nd815cq92l8p18n',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 17 }
+STATE: 
+int main() {
+    
+
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 18,
+  charToInsert: '}',
+  operationId: 'ivu4ho601ftb4f7f5ejeervps1',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 18 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 0,
+  position: 18,
+  charToInsert: '}',
+  operationId: 'ivu4ho601ftb4f7f5ejeervps1',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 18 }
+STATE: 
+int main() {
+    
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 17,
+  charToInsert: 's',
+  operationId: 'it7amo6844kfhghlme9jvafmna',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 19 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 17,
+  charToInsert: 's',
+  operationId: 'it7amo6844kfhghlme9jvafmna',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 19 }
+STATE: 
+int main() {
+    s
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 18,
+  charToInsert: 'w',
+  operationId: '1oftvhkuvp7ag8j9v898q5q8mp',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 20 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 18,
+  charToInsert: 'w',
+  operationId: '1oftvhkuvp7ag8j9v898q5q8mp',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 20 }
+STATE: 
+int main() {
+    sw
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 19,
+  charToInsert: 'a',
+  operationId: 'vhrs05r933rd0sssgvtmvtr1rd',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 21 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 19,
+  charToInsert: 'a',
+  operationId: 'vhrs05r933rd0sssgvtmvtr1rd',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 21 }
+STATE: 
+int main() {
+    swa
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 20,
+  charToInsert: 'p',
+  operationId: '94k4a8efi8hdlv2grj6pengib7',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 22 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 20,
+  charToInsert: 'p',
+  operationId: '94k4a8efi8hdlv2grj6pengib7',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 22 }
+STATE: 
+int main() {
+    swap
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 21,
+  charToInsert: 'n',
+  operationId: 'jfbiqc512dgcs28qn8am2simht',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 23 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 21,
+  charToInsert: 'n',
+  operationId: 'jfbiqc512dgcs28qn8am2simht',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 23 }
+STATE: 
+int main() {
+    swapn
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 22,
+  charToInsert: 'i',
+  operationId: '9l6jsdu8fe6k8nhd64ns79gllk',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 24 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 22,
+  charToInsert: 'i',
+  operationId: '9l6jsdu8fe6k8nhd64ns79gllk',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 24 }
+STATE: 
+int main() {
+    swapni
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 23,
+  charToInsert: 'l',
+  operationId: '93jijne9bae8if3gqoa4033lqj',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 25 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 23,
+  charToInsert: 'l',
+  operationId: '93jijne9bae8if3gqoa4033lqj',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 25 }
+STATE: 
+int main() {
+    swapnil
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 24,
+  charToInsert: ' ',
+  operationId: 'j3rnta8p1l1nghef2n8ro93tce',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 26 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 24,
+  charToInsert: ' ',
+  operationId: 'j3rnta8p1l1nghef2n8ro93tce',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 26 }
+STATE: 
+int main() {
+    swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 25,
+  charToInsert: 's',
+  operationId: 'k1lttrhmetca9os6chhlvkaqgs',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 27 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 25,
+  charToInsert: 's',
+  operationId: 'k1lttrhmetca9os6chhlvkaqgs',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 27 }
+STATE: 
+int main() {
+    swapnil s
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 26,
+  charToInsert: 'w',
+  operationId: 'jvqniq42l6r0larppiv56mh3l0',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 28 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 26,
+  charToInsert: 'w',
+  operationId: 'jvqniq42l6r0larppiv56mh3l0',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 28 }
+STATE: 
+int main() {
+    swapnil sw
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 27,
+  charToInsert: 'a',
+  operationId: 'crmdclhnof3p8rg70g07rnmp2b',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 29 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 27,
+  charToInsert: 'a',
+  operationId: 'crmdclhnof3p8rg70g07rnmp2b',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 29 }
+STATE: 
+int main() {
+    swapnil swa
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 28,
+  charToInsert: 'p',
+  operationId: '6b8akjcg3dlfc6q8gn9lste2au',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 30 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 28,
+  charToInsert: 'p',
+  operationId: '6b8akjcg3dlfc6q8gn9lste2au',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 30 }
+STATE: 
+int main() {
+    swapnil swap
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 29,
+  charToInsert: 'n',
+  operationId: '6u7rfo0kirkot4ud83miclaa1b',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 31 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 29,
+  charToInsert: 'n',
+  operationId: '6u7rfo0kirkot4ud83miclaa1b',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 31 }
+STATE: 
+int main() {
+    swapnil swapn
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 30,
+  charToInsert: 'i',
+  operationId: 'o393h1j5sliv1fs9am5o6q70l9',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 32 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 30,
+  charToInsert: 'i',
+  operationId: 'o393h1j5sliv1fs9am5o6q70l9',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 32 }
+STATE: 
+int main() {
+    swapnil swapni
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 31,
+  charToInsert: 'l',
+  operationId: '7fqs90sbdtam3kr3sq0crq1uce',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 33 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 31,
+  charToInsert: 'l',
+  operationId: '7fqs90sbdtam3kr3sq0crq1uce',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 33 }
+STATE: 
+int main() {
+    swapnil swapnil
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 19,
+  position: 32,
+  charToInsert: ' ',
+  operationId: 'libf0rartekasa8b2n97v4mrh8',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 34 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 19,
+  position: 32,
+  charToInsert: ' ',
+  operationId: 'libf0rartekasa8b2n97v4mrh8',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 34 }
+STATE: 
+int main() {
+    swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 33,
+  charToInsert: 's',
+  operationId: 'f9sitr6smk3o9k6jvqln31cp5b',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 35 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 33,
+  charToInsert: 's',
+  operationId: 'f9sitr6smk3o9k6jvqln31cp5b',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 35 }
+STATE: 
+int main() {
+    swapnil swapnil s
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 34,
+  charToInsert: 'w',
+  operationId: 'r29sst4r316q7b6tof4to26sri',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 36 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 34,
+  charToInsert: 'w',
+  operationId: 'r29sst4r316q7b6tof4to26sri',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 36 }
+STATE: 
+int main() {
+    swapnil swapnil sw
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 35,
+  charToInsert: 'a',
+  operationId: 's8et2420eq13qljvhognhava1p',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 37 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 35,
+  charToInsert: 'a',
+  operationId: 's8et2420eq13qljvhognhava1p',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 37 }
+STATE: 
+int main() {
+    swapnil swapnil swa
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 36,
+  charToInsert: 'p',
+  operationId: 'ufho9mnhqn5bd2h0hsl9imku8l',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 38 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 36,
+  charToInsert: 'p',
+  operationId: 'ufho9mnhqn5bd2h0hsl9imku8l',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 38 }
+STATE: 
+int main() {
+    swapnil swapnil swap
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 37,
+  charToInsert: 'n',
+  operationId: 'r8avveshvhgcstef3sg7m939bv',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 39 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 37,
+  charToInsert: 'n',
+  operationId: 'r8avveshvhgcstef3sg7m939bv',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 39 }
+STATE: 
+int main() {
+    swapnil swapnil swapn
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 38,
+  charToInsert: 'i',
+  operationId: '6sab5fq8ff3d092rq0kbscsn6a',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 40 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 38,
+  charToInsert: 'i',
+  operationId: '6sab5fq8ff3d092rq0kbscsn6a',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 40 }
+STATE: 
+int main() {
+    swapnil swapnil swapni
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 39,
+  charToInsert: 'l',
+  operationId: 'd8j15caapd35k4a47ggi777dvb',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 41 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 39,
+  charToInsert: 'l',
+  operationId: 'd8j15caapd35k4a47ggi777dvb',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 41 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 40,
+  charToInsert: ' ',
+  operationId: 'rl73dnvjtr2bvtqjlc5618akn3',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 42 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 40,
+  charToInsert: ' ',
+  operationId: 'rl73dnvjtr2bvtqjlc5618akn3',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 42 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 41,
+  charToInsert: 's',
+  operationId: 'n3t5dvrs67jq53clo4p2pgekb6',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 43 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 41,
+  charToInsert: 's',
+  operationId: 'n3t5dvrs67jq53clo4p2pgekb6',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 43 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil s
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 42,
+  charToInsert: 'w',
+  operationId: '2fdi7p9ir387a4qh21f2in3tm1',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 44 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 42,
+  charToInsert: 'w',
+  operationId: '2fdi7p9ir387a4qh21f2in3tm1',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 44 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil sw
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 43,
+  charToInsert: 'a',
+  operationId: 'd0u12g8h3c4l2uspdibii4nsb6',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 45 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 43,
+  charToInsert: 'a',
+  operationId: 'd0u12g8h3c4l2uspdibii4nsb6',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 45 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swa
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 44,
+  charToInsert: 'p',
+  operationId: 'ai04tr474eijv65p7snsbl1475',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 46 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 19,
+  position: 44,
+  charToInsert: 'p',
+  operationId: 'ai04tr474eijv65p7snsbl1475',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 46 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swap
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 45,
+  charToInsert: 'n',
+  operationId: '94nkeq0b9do9blt5oeehifcl89',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 47 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 45,
+  charToInsert: 'n',
+  operationId: '94nkeq0b9do9blt5oeehifcl89',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 47 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapn
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 46,
+  charToInsert: 'i',
+  operationId: '73fkhm7deip3r5h4jedhpjmak6',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 48 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 46,
+  charToInsert: 'i',
+  operationId: '73fkhm7deip3r5h4jedhpjmak6',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 48 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapni
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 47,
+  charToInsert: 'l',
+  operationId: 'mo9473sat68jhq85cr83ug90qg',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 49 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 47,
+  charToInsert: 'l',
+  operationId: 'mo9473sat68jhq85cr83ug90qg',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 49 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 48,
+  charToInsert: ' ',
+  operationId: 'hrauoa54568mt8sqprelds65mh',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 50 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 48,
+  charToInsert: ' ',
+  operationId: 'hrauoa54568mt8sqprelds65mh',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 50 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 49,
+  charToInsert: 's',
+  operationId: 'ms9vnrqrhn4qeioqodvq1mjet',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 51 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 49,
+  charToInsert: 's',
+  operationId: 'ms9vnrqrhn4qeioqodvq1mjet',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 51 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil s
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 50,
+  charToInsert: 'w',
+  operationId: 't15sfi1eoe3m4tvuvn1rfa4d42',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 52 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 50,
+  charToInsert: 'w',
+  operationId: 't15sfi1eoe3m4tvuvn1rfa4d42',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 52 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil sw
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 51,
+  charToInsert: 'a',
+  operationId: '9i0dr556s2ksssg1nqf2e5l3v6',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 53 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 51,
+  charToInsert: 'a',
+  operationId: '9i0dr556s2ksssg1nqf2e5l3v6',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 53 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil swa
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 52,
+  charToInsert: 'p',
+  operationId: 'j5qd0knn6cgpi026pbutinfas0',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 54 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 52,
+  charToInsert: 'p',
+  operationId: 'j5qd0knn6cgpi026pbutinfas0',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 54 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil swap
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 53,
+  charToInsert: 'n',
+  operationId: 'r5ldsm2a2jbnmq7gk27jtt4efa',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 55 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 53,
+  charToInsert: 'n',
+  operationId: 'r5ldsm2a2jbnmq7gk27jtt4efa',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 55 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil swapn
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 54,
+  charToInsert: 'i',
+  operationId: 'glpvb2qfiprjk02n7373o02g61',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 56 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 54,
+  charToInsert: 'i',
+  operationId: 'glpvb2qfiprjk02n7373o02g61',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 56 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil swapni
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 55,
+  charToInsert: 'l',
+  operationId: 'aiipedijf7hmdpnc7hekmj23gt',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 57 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 55,
+  charToInsert: 'l',
+  operationId: 'aiipedijf7hmdpnc7hekmj23gt',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 57 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil swapnil
+}
+undefined
+PUSH Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 56,
+  charToInsert: ' ',
+  operationId: 'vaksd1j63a01f7ds6pe9t8drrq',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 58 }
+TRANSFORMED Received : 
+dragonslayerx
+{ synTimeStamp: 24,
+  position: 56,
+  charToInsert: ' ',
+  operationId: 'vaksd1j63a01f7ds6pe9t8drrq',
+  userId: 'dragonslayerx',
+  type: 'INSERT',
+  timeStamp: 58 }
+STATE: 
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 18,
+  position: 0,
+  charToInsert: '\n',
+  operationId: '5h64al0d58getsjct3oqrl9pic',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 59 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 18,
+  position: 0,
+  charToInsert: '\n',
+  operationId: '5h64al0d58getsjct3oqrl9pic',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 59 }
+STATE: 
+
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 1,
+  charToInsert: 'd',
+  operationId: 'e1f4ak4cf8ovrbt4fhm0cghq0k',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 60 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 1,
+  charToInsert: 'd',
+  operationId: 'e1f4ak4cf8ovrbt4fhm0cghq0k',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 60 }
+STATE: 
+
+dint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 2,
+  charToInsert: 'i',
+  operationId: '26eg9q90hk2320ofrj2gqlkm6n',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 61 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 2,
+  charToInsert: 'i',
+  operationId: '26eg9q90hk2320ofrj2gqlkm6n',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 61 }
+STATE: 
+
+diint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 3,
+  charToInsert: 'k',
+  operationId: 'uo9be9nbvs7qce2rlh3lrvb506',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 62 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 3,
+  charToInsert: 'k',
+  operationId: 'uo9be9nbvs7qce2rlh3lrvb506',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 62 }
+STATE: 
+
+dikint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 4,
+  charToInsert: 's',
+  operationId: 'lo2m8hct8pbh465qrjt9jckfg8',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 63 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 4,
+  charToInsert: 's',
+  operationId: 'lo2m8hct8pbh465qrjt9jckfg8',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 63 }
+STATE: 
+
+diksint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 5,
+  charToInsert: 'h',
+  operationId: 'lnthg3ebqq823pmjbl700rsu5r',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 64 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 5,
+  charToInsert: 'h',
+  operationId: 'lnthg3ebqq823pmjbl700rsu5r',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 64 }
+STATE: 
+
+dikshint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 6,
+  charToInsert: 'a',
+  operationId: 'n6gfvjuungcteq5s74i2j6bk6n',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 65 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 6,
+  charToInsert: 'a',
+  operationId: 'n6gfvjuungcteq5s74i2j6bk6n',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 65 }
+STATE: 
+
+dikshaint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 7,
+  charToInsert: 'n',
+  operationId: 'pfqiptplkp1li6r8sq12k8i00l',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 66 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 7,
+  charToInsert: 'n',
+  operationId: 'pfqiptplkp1li6r8sq12k8i00l',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 66 }
+STATE: 
+
+dikshanint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 8,
+  charToInsert: 't',
+  operationId: 'g29398325jhqgppc0vuknid0t3',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 67 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 8,
+  charToInsert: 't',
+  operationId: 'g29398325jhqgppc0vuknid0t3',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 67 }
+STATE: 
+
+dikshantint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 9,
+  charToInsert: ' ',
+  operationId: 'iisfvb5brd5hi924n2c4v8qm34',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 68 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 9,
+  charToInsert: ' ',
+  operationId: 'iisfvb5brd5hi924n2c4v8qm34',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 68 }
+STATE: 
+
+dikshant int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 10,
+  charToInsert: 'd',
+  operationId: 'i1l15bhcqqb6mmggaqds94e0kr',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 69 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 10,
+  charToInsert: 'd',
+  operationId: 'i1l15bhcqqb6mmggaqds94e0kr',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 69 }
+STATE: 
+
+dikshant dint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 11,
+  charToInsert: 'i',
+  operationId: 'isfahsgurfde7trbmej5fdjajj',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 70 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 11,
+  charToInsert: 'i',
+  operationId: 'isfahsgurfde7trbmej5fdjajj',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 70 }
+STATE: 
+
+dikshant diint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 12,
+  charToInsert: 'k',
+  operationId: 'q6ik4gm54n0sdtda76oe1i7meq',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 71 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 12,
+  charToInsert: 'k',
+  operationId: 'q6ik4gm54n0sdtda76oe1i7meq',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 71 }
+STATE: 
+
+dikshant dikint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 13,
+  charToInsert: 's',
+  operationId: 'escdr6jv5jlg26dj15891k7qva',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 72 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 13,
+  charToInsert: 's',
+  operationId: 'escdr6jv5jlg26dj15891k7qva',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 72 }
+STATE: 
+
+dikshant diksint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 14,
+  charToInsert: 'h',
+  operationId: '2522ri5ahoh17dsm8c2tfdi2cr',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 73 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 14,
+  charToInsert: 'h',
+  operationId: '2522ri5ahoh17dsm8c2tfdi2cr',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 73 }
+STATE: 
+
+dikshant dikshint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 15,
+  charToInsert: 'a',
+  operationId: 'au832cbhfu1rvqiu43en2bavke',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 74 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 15,
+  charToInsert: 'a',
+  operationId: 'au832cbhfu1rvqiu43en2bavke',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 74 }
+STATE: 
+
+dikshant dikshaint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 16,
+  charToInsert: 'n',
+  operationId: 'opdaqqdb4e50niuh4ajjnap56u',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 75 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 16,
+  charToInsert: 'n',
+  operationId: 'opdaqqdb4e50niuh4ajjnap56u',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 75 }
+STATE: 
+
+dikshant dikshanint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 17,
+  charToInsert: 't',
+  operationId: 'odrndso0e9olu26kht954uvhve',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 76 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 17,
+  charToInsert: 't',
+  operationId: 'odrndso0e9olu26kht954uvhve',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 76 }
+STATE: 
+
+dikshant dikshantint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 18,
+  charToInsert: ' ',
+  operationId: 'h5sm37ecbrtg5u4s8s6t7n5sm8',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 77 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 18,
+  charToInsert: ' ',
+  operationId: 'h5sm37ecbrtg5u4s8s6t7n5sm8',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 77 }
+STATE: 
+
+dikshant dikshant int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 19,
+  charToInsert: 'd',
+  operationId: 'dlvsbnf3evgdkp3ccuckplobkg',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 78 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 19,
+  charToInsert: 'd',
+  operationId: 'dlvsbnf3evgdkp3ccuckplobkg',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 78 }
+STATE: 
+
+dikshant dikshant dint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 20,
+  charToInsert: 'i',
+  operationId: 'mhha7lmu0i1gl2eak0u2v3qtrg',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 79 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 20,
+  charToInsert: 'i',
+  operationId: 'mhha7lmu0i1gl2eak0u2v3qtrg',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 79 }
+STATE: 
+
+dikshant dikshant diint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 21,
+  charToInsert: 'k',
+  operationId: '5m6b1els4fl99mvngcgu8vu981',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 80 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 21,
+  charToInsert: 'k',
+  operationId: '5m6b1els4fl99mvngcgu8vu981',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 80 }
+STATE: 
+
+dikshant dikshant dikint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 22,
+  charToInsert: 's',
+  operationId: 'lrcgut1ig51bvttg4p1m9lvqab',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 81 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 22,
+  charToInsert: 's',
+  operationId: 'lrcgut1ig51bvttg4p1m9lvqab',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 81 }
+STATE: 
+
+dikshant dikshant diksint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 23,
+  charToInsert: 'h',
+  operationId: 'g6hpeli8ujc8ki1fastj8jstc1',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 82 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 23,
+  charToInsert: 'h',
+  operationId: 'g6hpeli8ujc8ki1fastj8jstc1',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 82 }
+STATE: 
+
+dikshant dikshant dikshint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 24,
+  charToInsert: 'a',
+  operationId: 'rh4r85fjhop8rtchoqq7u0h0vk',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 83 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 24,
+  charToInsert: 'a',
+  operationId: 'rh4r85fjhop8rtchoqq7u0h0vk',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 83 }
+STATE: 
+
+dikshant dikshant dikshaint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 25,
+  charToInsert: 'n',
+  operationId: '8clruapaddb1q9n5e0bptua1jd',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 84 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 25,
+  charToInsert: 'n',
+  operationId: '8clruapaddb1q9n5e0bptua1jd',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 84 }
+STATE: 
+
+dikshant dikshant dikshanint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 26,
+  charToInsert: 't',
+  operationId: 'fql9300l90iqvkme86o3t00nnc',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 85 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 26,
+  charToInsert: 't',
+  operationId: 'fql9300l90iqvkme86o3t00nnc',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 85 }
+STATE: 
+
+dikshant dikshant dikshantint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 27,
+  charToInsert: ' ',
+  operationId: '5evi2l3b2io629v1s72ihdmu20',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 86 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 27,
+  charToInsert: ' ',
+  operationId: '5evi2l3b2io629v1s72ihdmu20',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 86 }
+STATE: 
+
+dikshant dikshant dikshant int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 28,
+  charToInsert: 'd',
+  operationId: 'k1nohquvm7l1cgc2kuqf41osc1',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 87 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 28,
+  charToInsert: 'd',
+  operationId: 'k1nohquvm7l1cgc2kuqf41osc1',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 87 }
+STATE: 
+
+dikshant dikshant dikshant dint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 29,
+  charToInsert: 'i',
+  operationId: 'k39h6gqkfbn9j1rp7g2m1f1396',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 88 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 29,
+  charToInsert: 'i',
+  operationId: 'k39h6gqkfbn9j1rp7g2m1f1396',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 88 }
+STATE: 
+
+dikshant dikshant dikshant diint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 30,
+  charToInsert: 'k',
+  operationId: 'eltffbuj4n1dn9fsqgiqfporo2',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 89 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 30,
+  charToInsert: 'k',
+  operationId: 'eltffbuj4n1dn9fsqgiqfporo2',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 89 }
+STATE: 
+
+dikshant dikshant dikshant dikint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 31,
+  charToInsert: 's',
+  operationId: 'oo0i2qmgmrqr619uhfg6t1hf4m',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 90 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 31,
+  charToInsert: 's',
+  operationId: 'oo0i2qmgmrqr619uhfg6t1hf4m',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 90 }
+STATE: 
+
+dikshant dikshant dikshant diksint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 32,
+  charToInsert: 'h',
+  operationId: 'fnschd2ghkr05nnaprio6cfc0j',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 91 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 32,
+  charToInsert: 'h',
+  operationId: 'fnschd2ghkr05nnaprio6cfc0j',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 91 }
+STATE: 
+
+dikshant dikshant dikshant dikshint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 33,
+  charToInsert: 'a',
+  operationId: 'cif1s5elqj26kno54ofqt3mm20',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 92 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 33,
+  charToInsert: 'a',
+  operationId: 'cif1s5elqj26kno54ofqt3mm20',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 92 }
+STATE: 
+
+dikshant dikshant dikshant dikshaint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 34,
+  charToInsert: 'n',
+  operationId: 'i2j7ru8esheosgoreen5237542',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 93 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 34,
+  charToInsert: 'n',
+  operationId: 'i2j7ru8esheosgoreen5237542',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 93 }
+STATE: 
+
+dikshant dikshant dikshant dikshanint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 35,
+  charToInsert: 't',
+  operationId: 'dnq6kh8qkr7nlt82c2lmos16pd',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 94 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 35,
+  charToInsert: 't',
+  operationId: 'dnq6kh8qkr7nlt82c2lmos16pd',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 94 }
+STATE: 
+
+dikshant dikshant dikshant dikshantint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 36,
+  charToInsert: ' ',
+  operationId: 'd32bgl5ehdhvjjf1uom483u4ho',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 95 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 36,
+  charToInsert: ' ',
+  operationId: 'd32bgl5ehdhvjjf1uom483u4ho',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 95 }
+STATE: 
+
+dikshant dikshant dikshant dikshant int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 37,
+  charToInsert: 'd',
+  operationId: '6lf0vgvq7cjjuk3cu0prembr8h',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 96 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 37,
+  charToInsert: 'd',
+  operationId: '6lf0vgvq7cjjuk3cu0prembr8h',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 96 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 38,
+  charToInsert: 'i',
+  operationId: 'gje0fnhlfjr6cir5vput58ajec',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 97 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 38,
+  charToInsert: 'i',
+  operationId: 'gje0fnhlfjr6cir5vput58ajec',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 97 }
+STATE: 
+
+dikshant dikshant dikshant dikshant diint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 39,
+  charToInsert: 'k',
+  operationId: 'ga2hjvmr6afmpduvedvbrtjtll',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 98 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 39,
+  charToInsert: 'k',
+  operationId: 'ga2hjvmr6afmpduvedvbrtjtll',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 98 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 40,
+  charToInsert: 's',
+  operationId: 'fr49v3uu8nno01jvpliioisq6r',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 99 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 23,
+  position: 40,
+  charToInsert: 's',
+  operationId: 'fr49v3uu8nno01jvpliioisq6r',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 99 }
+STATE: 
+
+dikshant dikshant dikshant dikshant diksint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 41,
+  charToInsert: 'h',
+  operationId: 'pn0anejt1n1ilrj8gtd6b56a6t',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 100 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 41,
+  charToInsert: 'h',
+  operationId: 'pn0anejt1n1ilrj8gtd6b56a6t',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 100 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 42,
+  charToInsert: 'a',
+  operationId: 'c6annrtq7vna2gsm2gqro649lm',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 101 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 42,
+  charToInsert: 'a',
+  operationId: 'c6annrtq7vna2gsm2gqro649lm',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 101 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshaint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 43,
+  charToInsert: 'n',
+  operationId: 'g9kvmtqlofjrqc2g2kefk3t53f',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 102 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 43,
+  charToInsert: 'n',
+  operationId: 'g9kvmtqlofjrqc2g2kefk3t53f',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 102 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshanint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 44,
+  charToInsert: 't',
+  operationId: 'jb8ueqm33vntbc11o0mkfdcms5',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 103 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 44,
+  charToInsert: 't',
+  operationId: 'jb8ueqm33vntbc11o0mkfdcms5',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 103 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshantint main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 45,
+  charToInsert: ' ',
+  operationId: '2iji6bvoebiecrc75chnakno99',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 104 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 45,
+  charToInsert: ' ',
+  operationId: '2iji6bvoebiecrc75chnakno99',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 104 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 46,
+  charToInsert: '\n',
+  operationId: 'nmrlbu77ahp3j1t1svp6skmar9',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 105 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 28,
+  position: 46,
+  charToInsert: '\n',
+  operationId: 'nmrlbu77ahp3j1t1svp6skmar9',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 105 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant 
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 46,
+  charToInsert: 'd',
+  operationId: 'aul7i8gg9ofjssohtunb2h87no',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 106 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 46,
+  charToInsert: 'd',
+  operationId: 'aul7i8gg9ofjssohtunb2h87no',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 106 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant d
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 47,
+  charToInsert: 'i',
+  operationId: 'qgq24reb8ael468ph7gbd7k245',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 107 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 47,
+  charToInsert: 'i',
+  operationId: 'qgq24reb8ael468ph7gbd7k245',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 107 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant di
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 48,
+  charToInsert: 'k',
+  operationId: 'pdvro721fvbbhcppa5e0s13an7',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 108 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 48,
+  charToInsert: 'k',
+  operationId: 'pdvro721fvbbhcppa5e0s13an7',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 108 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dik
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 49,
+  charToInsert: 's',
+  operationId: 'vj835k8m11r5koecnk405ca9ef',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 109 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 49,
+  charToInsert: 's',
+  operationId: 'vj835k8m11r5koecnk405ca9ef',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 109 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant diks
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 50,
+  charToInsert: 'h',
+  operationId: 'cc9l7uoab2c0euagugf3nmh478',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 110 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 50,
+  charToInsert: 'h',
+  operationId: 'cc9l7uoab2c0euagugf3nmh478',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 110 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant diksh
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 51,
+  charToInsert: 'a',
+  operationId: 'lgqv5ejcl8l5lerfps66knend2',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 111 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 51,
+  charToInsert: 'a',
+  operationId: 'lgqv5ejcl8l5lerfps66knend2',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 111 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant diksha
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 52,
+  charToInsert: 'n',
+  operationId: 'rmb3veomo2lu3vqlt2vgb8814c',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 112 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 52,
+  charToInsert: 'n',
+  operationId: 'rmb3veomo2lu3vqlt2vgb8814c',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 112 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshan
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 53,
+  charToInsert: 't',
+  operationId: 'urgp9a63o9f9ae0l31aikf2lp',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 113 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 53,
+  charToInsert: 't',
+  operationId: 'urgp9a63o9f9ae0l31aikf2lp',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 113 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 54,
+  charToInsert: ' ',
+  operationId: 'm0v425iokj09ibmsgmfvk4o7i',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 114 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 43,
+  position: 54,
+  charToInsert: ' ',
+  operationId: 'm0v425iokj09ibmsgmfvk4o7i',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 114 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant 
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 55,
+  charToInsert: 'd',
+  operationId: 'gnbntajro04orsg13cqddn1n8',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 115 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 55,
+  charToInsert: 'd',
+  operationId: 'gnbntajro04orsg13cqddn1n8',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 115 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant d
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 56,
+  charToInsert: 'i',
+  operationId: 'rkr46gjh05p49hopapq0g7bnjd',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 116 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 56,
+  charToInsert: 'i',
+  operationId: 'rkr46gjh05p49hopapq0g7bnjd',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 116 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant di
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 57,
+  charToInsert: 'k',
+  operationId: '9a9914978v143crhuu7l4tfdq1',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 117 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 57,
+  charToInsert: 'k',
+  operationId: '9a9914978v143crhuu7l4tfdq1',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 117 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant dik
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 58,
+  charToInsert: 's',
+  operationId: '8cgjele9vh7pnieergv3mnnbhb',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 118 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 58,
+  charToInsert: 's',
+  operationId: '8cgjele9vh7pnieergv3mnnbhb',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 118 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant diks
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 59,
+  charToInsert: 'h',
+  operationId: 'urpsj3n9hfh9djni1jijj3alrk',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 119 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 59,
+  charToInsert: 'h',
+  operationId: 'urpsj3n9hfh9djni1jijj3alrk',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 119 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant diksh
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 60,
+  charToInsert: 'a',
+  operationId: 'lker1s9vidnek518qpl979rm83',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 120 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 60,
+  charToInsert: 'a',
+  operationId: 'lker1s9vidnek518qpl979rm83',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 120 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant diksha
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 61,
+  charToInsert: 'n',
+  operationId: 'qmuqkhr9cm05rq9428fmd2fkfq',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 121 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 61,
+  charToInsert: 'n',
+  operationId: 'qmuqkhr9cm05rq9428fmd2fkfq',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 121 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant dikshan
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined
+PUSH Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 62,
+  charToInsert: 't',
+  operationId: '89a6f9nuf0h4a6gr6rn8l4iodm',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 122 }
+TRANSFORMED Received : 
+dragonslayerv2
+{ synTimeStamp: 48,
+  position: 62,
+  charToInsert: 't',
+  operationId: '89a6f9nuf0h4a6gr6rn8l4iodm',
+  userId: 'dragonslayerv2',
+  type: 'INSERT',
+  timeStamp: 122 }
+STATE: 
+
+dikshant dikshant dikshant dikshant dikshant dikshant dikshant
+int main() {
+    swapnil swapnil swapnil swapnil swapnil 
+}
+undefined

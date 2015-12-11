@@ -137,7 +137,7 @@ module.exports = {
 	handleGet: function (request, response, userId, docId, docPath) {
 		if (userId in activeClients && docId in openFileTable) {
 			var prevTimeStamp = lastSync[docId][userId];
-			var currentTimeStamp = transformedOperations[docId].length;
+			var currentTimeStamp = 0;
 			
 			/*
 				//console.log('GET Received');
@@ -148,10 +148,13 @@ module.exports = {
 			//Operations since the last time the client synced with the server
 			var operationsNotSynced = [];
 			var size = transformedOperations[docId].length;
-			for (var i = 0; i < size; i++) {
+			var count = 0;
+			for (var i = 0; i < size && count < 10; i++) {
 				var operation =  transformedOperations[docId][i]; 
 				if (operation.timeStamp >= prevTimeStamp) {
 					operationsNotSynced.push(operation);
+					currentTimeStamp = operation.timeStamp+1;
+					count++;
 				}
 			}
 			
@@ -205,11 +208,11 @@ module.exports = {
 					}
 				} else {
 					//Non-idempotent operations
-					/*
-						console.log('PUSH Received');
+
+						console.log('PUSH Received : ');
 						console.log(userId);
 						console.log(operation);
-					*/
+
 					
 					//Apply operational transform on the state received
 					transformedOperations[docId].push(transformedOp);
@@ -221,13 +224,15 @@ module.exports = {
 					applyToRope(docId, transformedOp);
 					operationsNotSaved[docId].push(transformedOp);
 					
-					//console.log(states[docId].toString());
-					
-					/*
-						console.log('Transformed Received');
+
+
+						console.log('TRANSFORMED Received : ');
 						console.log(userId);
 						console.log(transformedOp);
-					*/
+
+					console.log('STATE: ');
+					console.log(states[docId].toString());
+					console.log();
 				}
 			}
 			response.end();
