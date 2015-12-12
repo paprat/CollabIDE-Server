@@ -1,17 +1,17 @@
 module.exports = {
 
     //Compound Operational Transform
-    transform: function(operation, Buffer) {
-        for (var i = operation.synTimeStamp; i < Buffer.length; i++) {
-            var op = Buffer[i];
-            if (op.userId != operation.userId) {
-                var transformed1 = transformOperation(op, operation, false);
-                var transformed2 = transformOperation(operation, op, true);
-                operation = transformed1;
+    transform: function(remote, Buffer) {
+        for (var i = remote.synTimeStamp; i < Buffer.length; i++) {
+            var local = Buffer[i];
+            if (local.userId != remote.userId) {
+                var transformed1 = transformOperation(local, remote, false);
+                var transformed2 = transformOperation(remote, local, true);
+                remote = transformed1;
                 Buffer[i] = transformed2;
             }
         }
-        return operation;
+        return remote;
     }
 }
 

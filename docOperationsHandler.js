@@ -160,17 +160,11 @@ module.exports = {
 			
 			//Send operations not yet synced with the client
 			if (operationsNotSynced.length > 0) {
-				var res = {};
-				res.last_sync = currentTimeStamp;
-				res.operations = operationsNotSynced;
 				lastSync[docId][userId] = currentTimeStamp;
-				response.end(JSON.stringify(res));
+				response.end(JSON.stringify(operationsNotSynced));
 			} else {
 				//If no operations to be pushed, tell the client about the cursor positions of other clients on the doc
-				var res = {};
-				res.last_sync = currentTimeStamp;
-				res.operations = repositionOperations[docId];
-				response.end(JSON.stringify(res));
+				response.end(JSON.stringify(repositionOperations[docId]));
 			}
 			
 		} else {
@@ -190,6 +184,7 @@ module.exports = {
 				var currentTimeStamp = transformedOperations[docId].length;
 				operation.timeStamp = currentTimeStamp;
 
+				//Transform the operation in accordance to the operations received from other clients
 				var transformedOp = operationalTransform.transform(operation, localOperations[docId]);
 
 				if (transformedOp.type == 'REPOSITION') {
@@ -209,12 +204,10 @@ module.exports = {
 				} else {
 					//Non-idempotent operations
 
-						/*console.log('PUSH Received : ');
+						console.log('PUSH Received : ');
 						console.log(userId);
-						console.log(operation);*/
+						console.log(operation);
 
-					
-					//Apply operational transform on the state received
 					transformedOperations[docId].push(transformedOp);
 					
 					var obj = JSON.parse(JSON.stringify(transformedOp));
@@ -223,17 +216,14 @@ module.exports = {
 					//Update the server state of the doc
 					applyToRope(docId, transformedOp);
 					operationsNotSaved[docId].push(transformedOp);
-					
 
-
-						/*console.log('TRANSFORMED Received : ');
+						console.log('TRANSFORMED Received : ');
 						console.log(userId);
-						console.log(transformedOp);-*
+						console.log(transformedOp);
 
-					/*Print State
+					//Print State
 					console.log('STATE: ');
 					console.log(states[docId].toString());
-					console.log();*/
 				}
 			}
 			response.end();
@@ -247,11 +237,13 @@ module.exports = {
 function applyToRope(docId, operation) {
 	if (operation.type == 'INSERT') {
 		if (operation.position < 0 || operation.position > states[docId].length) {	
+			console.log('Invalid Insert Operation');
 		} else {
 			states[docId].insert(operation.position, operation.charToInsert);
 		}
 	} else if (operation.type == 'ERASE'){
 		if (operation.position < 0 || operation.position >= states[docId].length) {
+			console.log('Invalid Erase Operation');
 		} else {
 			states[docId].remove(operation.position, operation.position+1);
 		}
