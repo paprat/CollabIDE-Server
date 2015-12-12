@@ -93,7 +93,8 @@ module.exports = {
                 }
             }
             var newPath = dirName + newdirPath;
-            var ide = crypto.createHash('md5').update(req.body.name).digest("hex")
+            var completeFilePath = newPath + req.body.name;
+            var ide = crypto.createHash('md5').update(completeFilePath).digest("hex")
             new file({
                 fileID: ide,
                 fileName: req.body.name,
