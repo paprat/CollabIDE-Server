@@ -209,9 +209,9 @@ module.exports = {
 				} else {
 					//Non-idempotent operations
 
-						console.log('PUSH Received : ');
+						/*console.log('PUSH Received : ');
 						console.log(userId);
-						console.log(operation);
+						console.log(operation);*/
 
 					
 					//Apply operational transform on the state received
@@ -226,13 +226,14 @@ module.exports = {
 					
 
 
-						console.log('TRANSFORMED Received : ');
+						/*console.log('TRANSFORMED Received : ');
 						console.log(userId);
-						console.log(transformedOp);
+						console.log(transformedOp);-*
 
+					/*Print State
 					console.log('STATE: ');
 					console.log(states[docId].toString());
-					console.log();
+					console.log();*/
 				}
 			}
 			response.end();
