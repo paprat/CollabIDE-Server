@@ -3,6 +3,7 @@ var fs = require('fs');
 var util = require('util');
 var operationalTransform = require('./OT');
 
+var DEBUG = false;
 
 var activeClients = {};
 var openFileTable = {};
@@ -204,26 +205,31 @@ module.exports = {
 				} else {
 					//Non-idempotent operations
 
+					if (DEBUG) {
 						console.log('PUSH Received : ');
 						console.log(userId);
 						console.log(operation);
+					}
 
 					transformedOperations[docId].push(transformedOp);
-					
+
 					var obj = JSON.parse(JSON.stringify(transformedOp));
 					localOperations[docId].push(obj);
-					
+
 					//Update the server state of the doc
 					applyToRope(docId, transformedOp);
 					operationsNotSaved[docId].push(transformedOp);
 
+					if (DEBUG) {
 						console.log('TRANSFORMED Received : ');
 						console.log(userId);
 						console.log(transformedOp);
-
+					}
 					//Print State
-					console.log('STATE: ');
-					console.log(states[docId].toString());
+					if (DEBUG) {
+						console.log('STATE: ');
+						console.log(states[docId].toString());
+					}
 				}
 			}
 			response.end();
