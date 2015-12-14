@@ -1,6 +1,7 @@
-var rope = require('./rope');
 var fs = require('fs');
 var util = require('util');
+
+var rope = require('./rope');
 var operationalTransform = require('./OT');
 
 var DEBUG = false;
@@ -154,9 +155,7 @@ module.exports = {
 				var operation = transformedOperations[docId][i];
 				operationsNotSynced.push(operation);
 				currentTimeStamp = operation.timeStamp + 1;
-				if (operation.userId != usedId) {
-					count++;
-				}
+				count++;
 			}
 			
 			//Send operations not yet synced with the client
