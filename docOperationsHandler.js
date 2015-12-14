@@ -150,11 +150,11 @@ module.exports = {
 			var operationsNotSynced = [];
 			var size = transformedOperations[docId].length;
 			var count = 0;
-			for (var i = 0; i < size && count < 10; i++) {
-				var operation =  transformedOperations[docId][i]; 
-				if (operation.timeStamp >= prevTimeStamp) {
-					operationsNotSynced.push(operation);
-					currentTimeStamp = operation.timeStamp+1;
+			for (var i = prevTimeStamp; i < size && count < 10; i++) {
+				var operation = transformedOperations[docId][i];
+				operationsNotSynced.push(operation);
+				currentTimeStamp = operation.timeStamp + 1;
+				if (operation.userId != usedId) {
 					count++;
 				}
 			}
@@ -205,6 +205,7 @@ module.exports = {
 				} else {
 					//Non-idempotent operations
 
+					//logs the received operation
 					if (DEBUG) {
 						console.log('PUSH Received : ');
 						console.log(userId);
@@ -220,12 +221,13 @@ module.exports = {
 					applyToRope(docId, transformedOp);
 					operationsNotSaved[docId].push(transformedOp);
 
+					//logs the transformed operation
 					if (DEBUG) {
 						console.log('TRANSFORMED Received : ');
 						console.log(userId);
 						console.log(transformedOp);
 					}
-					//Print State
+					//Print server state
 					if (DEBUG) {
 						console.log('STATE: ');
 						console.log(states[docId].toString());
@@ -240,6 +242,7 @@ module.exports = {
 	}
 };
 
+//apply operations to server-state
 function applyToRope(docId, operation) {
 	if (operation.type == 'INSERT') {
 		if (operation.position < 0 || operation.position > states[docId].length) {	
