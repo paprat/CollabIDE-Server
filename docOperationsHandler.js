@@ -1,23 +1,48 @@
 var fs = require('fs');
 var util = require('util');
 
+//required modules
 var rope = require('./rope');
 var operationalTransform = require('./OT');
 
+/*DEBUG flag 
+	true : prints newly pushed operations, transformed operations and current state
+	false: avoid any printing on console and debug.log
+*/
 var DEBUG = false;
 
+/*
+activeClients: no of active sessions by each client
+openFileTable: no of clients that are editing the current doc
+*/
 var activeClients = {};
 var openFileTable = {};
 
-var lastSync = {};
-var states = {};
+/*
+synTimeStamps: timeStamps of last synchronization for each client-doc pair
+here 'synchronization' refers to process of pulling the doc state by the client from the server
+*/
+var synTimeStamps = {};
 
+/*
+docState: rope data-structure to maintain the state of the each active doc at server-end
+*/
+var docState = {};
+
+/*
+localOperations: operations required to transform the newly received operations from the client
+transformedOperations: transformed operations that are applied the the server state and broadcasted to each client.
+*/
 var localOperations = {};
 var transformedOperations = {};
 var repositionOperations = {};
 
+/*
+THRESHOLD_TIME_MILLISECONDS: time in millis after which the server writes the current state to the file on its end
+intervalObj : required for cancelling the async event that writes the current state to the file on its end one all the sessions using this doc are closed.
+operationsNotSaved : operations performed to the docState since last write to the file
+*/
 var intervalObj = {};
-
 var THRESHOLD_TIME_MILLISECONDS = 12000;
 var operationsNotSaved = {};
 
@@ -30,7 +55,7 @@ console.log = function(d) { //
 };
 
 
-//Modules exported
+//exported modules
 module.exports = {
 	handleRegister: function (request, response, userId, docId, docPath) {
 		if (userId in activeClients) {
@@ -43,13 +68,13 @@ module.exports = {
 			
 			//Doc Already exists in the openFileTable
 			openFileTable[docId]++;
-			var content = states[docId].toString();
+			var content = docState[docId].toString();
 			var length = transformedOperations[docId].length;
 			
-			lastSync[docId][userId] = length;
+			synTimeStamps[docId][userId] = length;
 			
 			//Send the contents of the file to the client
-			response.end(states[docId].toString());
+			response.end(docState[docId].toString());
 		} else {
 			
 			//New doc to be inserted in openFileTable
@@ -61,46 +86,40 @@ module.exports = {
 			localOperations[docId] = [];
 			operationsNotSaved[docId] = [];
 			
-			//Set lastSync of the newly created doc to 0 i.e. no operations upto now
-			lastSync[docId] = {};
-			lastSync[docId][userId] = 0;
+			//set synTimeStamps of the newly created doc to 0 i.e. no operations upto now
+			synTimeStamps[docId] = {};
+			synTimeStamps[docId][userId] = 0;
 			
+			//reads the content of the file synchronously
 			var fileName = docPath;
 			var contents = fs.readFileSync(fileName).toString();
 			
-			//Write file after every two THRESHOLD_TIME_MILLISECONDS
+			//write file after every two THRESHOLD_TIME_MILLISECONDS
 			intervalObj[docId] = setInterval(writeCallback, THRESHOLD_TIME_MILLISECONDS, docPath, docId);
 			
-			//Initialises the Rope with contents of the file 
-			states[docId] = rope('');
+			//initialises the Rope with contents of the file
+			docState[docId] = rope('');
 			var count = 0;
+			
+			//resolves /r/n issue
 			for (var i = 0; i < contents.length; i++) {
-				//Take care of /r/n issue
 				if (i < contents.length-1 && contents[i] == '\r' && contents[i+1] == '\n') {
-					states[docId].insert(i-count, '\n');
+					docState[docId].insert(i-count, '\n');
 					count++;
 					i++;
 				} else {
-					states[docId].insert(i-count, contents[i]);
+					docState[docId].insert(i-count, contents[i]);
 				}
 			}
 			
-			//Send the contents of the file to the client
-			response.end(states[docId].toString());
+			//send the contents of the file to the client
+			response.end(docState[docId].toString());
 		}
-		//console.log("-------------------------");
-		//console.log(states[docId].toString());
 	}
 	,
 	handleUnregister: function (request, response, userId, docId, docPath) {
 		if (userId in activeClients) {
 			if (docId in openFileTable) {
-
-				/*console.log(userId);
-				console.log(activeClients[userId]);
-
-				console.log(docId);
-				console.log(openFileTable[docId]);*/
 
 				//reduce no of sessions opened by a client
 				activeClients[userId]--;
@@ -117,13 +136,13 @@ module.exports = {
 					//stop writeCallback
 					clearInterval(intervalObj[docId]);
 					
-					//Destroy all datastructures
-					delete states[docId];
+					//destroy all data-structures
+					delete docState[docId];
 					delete transformedOperations[docId];
 					delete repositionOperations[docId];
 					delete localOperations[docId];
 					delete operationsNotSaved[docId];
-					delete lastSync[docId];
+					delete synTimeStamps[docId];
 					
 					delete openFileTable[docId];
 				}
@@ -138,16 +157,16 @@ module.exports = {
 	,
 	handleGet: function (request, response, userId, docId, docPath) {
 		if (userId in activeClients && docId in openFileTable) {
-			var prevTimeStamp = lastSync[docId][userId];
+			var prevTimeStamp = synTimeStamps[docId][userId];
 			var currentTimeStamp = 0;
 			
-			/*
-				//console.log('GET Received');
-				//console.log(lastSync[docId][userId]);
-				//console.log(sessionBuffers[docId].length);
-			*/
-					
-			//Operations since the last time the client synced with the server
+			if (DEBUG) {
+				console.log('GET Received');
+				console.log(synTimeStamps[docId][userId]);
+				console.log(sessionBuffers[docId].length);
+			}
+			
+			//operations since the client pulled the state from  the server
 			var operationsNotSynced = [];
 			var size = transformedOperations[docId].length;
 			var count = 0;
@@ -158,9 +177,9 @@ module.exports = {
 				count++;
 			}
 			
-			//Send operations not yet synced with the client
+			//send operations not yet synced with the client
 			if (operationsNotSynced.length > 0) {
-				lastSync[docId][userId] = currentTimeStamp;
+				synTimeStamps[docId][userId] = currentTimeStamp;
 				response.end(JSON.stringify(operationsNotSynced));
 			} else {
 				//If no operations to be pushed, tell the client about the cursor positions of other clients on the doc
@@ -178,7 +197,6 @@ module.exports = {
 
 			var operationReceived = request.body;
 			//Bulk push request received from the server
-			//console.log(operationReceived);
 			for (var k = 0; k < operationReceived.length; k++) {
 				var operation = operationReceived[k];
 				var currentTimeStamp = transformedOperations[docId].length;
@@ -189,6 +207,7 @@ module.exports = {
 
 				if (transformedOp.type == 'REPOSITION') {
 					var flag = false;
+					//checks whether the repositionOperation contains the client
 					for (var i = 0; i < repositionOperations[docId].length; i++) {
 						var userId = repositionOperations[docId][i].userId;
 						//update cursor position
@@ -229,7 +248,7 @@ module.exports = {
 					//Print server state
 					if (DEBUG) {
 						console.log('STATE: ');
-						console.log(states[docId].toString());
+						console.log(docState[docId].toString());
 					}
 				}
 			}
@@ -244,16 +263,16 @@ module.exports = {
 //apply operations to server-state
 function applyToRope(docId, operation) {
 	if (operation.type == 'INSERT') {
-		if (operation.position < 0 || operation.position > states[docId].length) {	
+		if (operation.position < 0 || operation.position > docState[docId].length) {
 			console.log('Invalid Insert Operation');
 		} else {
-			states[docId].insert(operation.position, operation.charToInsert);
+			docState[docId].insert(operation.position, operation.charToInsert);
 		}
 	} else if (operation.type == 'ERASE'){
-		if (operation.position < 0 || operation.position >= states[docId].length) {
+		if (operation.position < 0 || operation.position >= docState[docId].length) {
 			console.log('Invalid Erase Operation');
 		} else {
-			states[docId].remove(operation.position, operation.position+1);
+			docState[docId].remove(operation.position, operation.position+1);
 		}
 	} else {
 		console.log('Operation is undefined');
@@ -267,7 +286,7 @@ function writeCallback(docPath, docId) {
 }
 
 function writeToFile(docPath, docId) {
-	fs.writeFile(docPath, states[docId].toString(), function(err) {
+	fs.writeFile(docPath, docState[docId].toString(), function(err) {
 		if(err) {
 			return console.log(err);
 		}
