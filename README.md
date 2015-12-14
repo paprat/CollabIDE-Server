@@ -1,6 +1,6 @@
 # README #
 
-This project is developed by me(Swapnil Saxena) and my team-mates Ashish Chauhan, Pratham Pandey and Dikshant Gupta as a part of our 5th semester mini-project and is intended purely for educational purposes. Everyone is welcome to introduce changes and report bugs. Also one can copy, modify this project for educational purposes for free.  
+This project is developed by me(Swapnil Saxena) and my team-mates Ashish Chauhan, Pratham Pandey and Dikshant Gupta as a part of our 5th semester mini-project and is intended purely for educational purposes. Everyone is welcome to introduce changes, add features, fix bugs and distribute it without any consent.
 
 ### What is this repository for? ###
 
@@ -28,5 +28,5 @@ https://dragonslayerx@bitbucket.org/dragonslayerx/collaborative-ide-client
 
 ### Who do I talk to?
 
-For any queries contact at the given id:
+For any queries contact at:
 * Swapnil Saxena (swapnilsaxena@live.in, swapniliiit@gmail.com)
