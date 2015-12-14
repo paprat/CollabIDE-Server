@@ -13,22 +13,21 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-//Middlewares
+//middlewares
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Modules required by Server for handling various requests
+//modules required by Server for handling various requests
 var auth = require('./auth');
 var projectManager = require('./projectManager');
 var notification = require('./notification');
 var share = require('./shareProject');
 var docOperationsHandler = require('./docOperationsHandler');
 
-//Database
+//database
 mongoose.connect('mongodb://localhost/CollabEdit');
-//Database Connection
 var conn = mongoose.connection;
 
 var dirName = __dirname + "\\UserProjects";
