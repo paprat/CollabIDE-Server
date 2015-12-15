@@ -30,7 +30,7 @@ var dirName = __dirname + "\\UserProjects";
 
 //cache to hold docIdPathPair
 var MAX_CACHE_SIZE = 100;
-var docIdPathPair = cache(MAX_CACHE_SIZE);
+var docIdPathCache = new cache.LRUCache(MAX_CACHE_SIZE);
 
 app.use("/", function(req, res) {
     var parsedUrl = url.parse(req.url);
@@ -75,11 +75,11 @@ app.use("/", function(req, res) {
 });
 
 function passFileToHandler(req, res, userId, docId, handler) {
-    if (docIdPathCache.find(docId)) {
+    if (docIdPathCache.find(docId) != undefined) {
 		var docPath = docIdPathCache.get(docId);
 		handler(req, res, userId, docId, docPath);
 	} else {
-		getDocPath(docId, function(docPath) {
+        getDocPath(docId, function(docPath) {
 			if (docIdPathCache.size < docIdPathCache.limit) {
 				docIdPathCache.put(docId, docPath);
 			} else {
