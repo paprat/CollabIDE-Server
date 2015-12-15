@@ -1,6 +1,5 @@
 var express = require('express');
 var path = require('path');
-var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var queryString = require('querystring');
@@ -9,17 +8,13 @@ var url = require('url');
 //express app
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
 //middlewares
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //modules required by Server for handling various requests
+var cache = require('./cache');
 var auth = require('./auth');
 var projectManager = require('./projectManager');
 var notification = require('./notification');
@@ -30,7 +25,12 @@ var docOperationsHandler = require('./docOperationsHandler');
 mongoose.connect('mongodb://localhost/CollabEdit');
 var conn = mongoose.connection;
 
+//dirName
 var dirName = __dirname + "\\UserProjects";
+
+//cache to hold docIdPathPair
+var MAX_CACHE_SIZE = 100;
+var docIdPathPair = cache(MAX_CACHE_SIZE);
 
 app.use("/", function(req, res) {
     var parsedUrl = url.parse(req.url);
@@ -75,9 +75,20 @@ app.use("/", function(req, res) {
 });
 
 function passFileToHandler(req, res, userId, docId, handler) {
-    getDocPath(docId, function(docPath) {
-        handler(req, res, userId, docId, docPath);
-    });
+    if (docIdPathCache.find(docId)) {
+		var docPath = docIdPathCache.get(docId);
+		handler(req, res, userId, docId, docPath);
+	} else {
+		getDocPath(docId, function(docPath) {
+			if (docIdPathCache.size < docIdPathCache.limit) {
+				docIdPathCache.put(docId, docPath);
+			} else {
+				docIdPathCache.shift();
+				docIdPathCache.put(docId, docPath);	
+			}
+			handler(req, res, userId, docId, docPath);
+		});
+	}
 }
 
 function getDocPath(docId, callback) {
