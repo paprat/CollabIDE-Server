@@ -187,8 +187,6 @@ Session.prototype.handlePush = function(request, response, userId) {
 			log('STATE', this.state.getState());
 		}
 	});
-	
-	response.end();
 }
 
 /**
@@ -234,7 +232,6 @@ Session.prototype.handleGet = function(request, response, userId) {
 			);
 		}
 		response.json(repositionOperations[docId]);
-		response.end();
 	}
 }
 
@@ -259,29 +256,33 @@ function SessionManager() {
 
 /**
  * Creates a new session for Doc#docId, if none exists. Else uses an existing session. Adds the User#userId to the session. 
- * @return {String} current state of the doc#docID.
+ *
+ * @param request {Object} User's request object
+ * @param response {Object} User's response object
  * @param userId {String} User's userId who has sent REGISTER request.
  * @param docId {String} Doc's docId which user wants to edit.
  * @param docPath {String} Path of the doc on server.
  */
-SessionManager.prototype.handleRegister = function(userId, docId, docPath) {
+SessionManager.prototype.handleRegister = function(request, response, userId, docId, docPath) {
 	if (this.sessions[docId] == undefined) {
 		this.sessions[docId] = new Session(docId, docPath);
 	} 
 	var session = this.sessions[docId];
 	session.addUser(userId);
 	var state = session.state.getState();
-	return state;
+	response.end(state);
 }
 
 /**
  * Removes the User#userId to the session. Destroys it if no user is currently editing the doc.
  *
+ * @param request {Object} User's request object
+ * @param response {Object} User's response object
  * @param userId {String} User's userId who has sent REGISTER request.
  * @param docId {String} Doc's docId which user wants to edit.
  * @param docPath {String} Path of the doc on server.
  */
-SessionManager.prototype.handleUnregister = function(userId, docId) {
+SessionManager.prototype.handleUnregister = function(request, response, userId, docId) {
 	try {
 		if (this.sessions[docId] != undefined) {
 			var session = sessions[docId];
@@ -303,6 +304,8 @@ SessionManager.prototype.handleUnregister = function(userId, docId) {
 		}
 	} catch (err) {
 		console.log(err.msg);
+	} finally {
+		response.end();
 	}
 }
 
@@ -318,31 +321,47 @@ SessionManager.prototype.handleUnregister = function(userId, docId) {
 	try {
 		if (this.sessions[docId] == undefined) {
 			throw {
-				msg: 'request for non-existent doc#' + docId
+				msg: 'Get request for non-existent doc#' + docId
 			};
 		} else {
 			var session = this.sessions[docId];
 			if (session.state.userCursorPos[userId] == undefined) {
 				throw {
-					msg: 'request for non-existent user#' + userId + ' on doc#' + docId
+					msg: 'Get request for non-existent user#' + userId + ' on doc#' + docId
 				};
 			} else {
-				//routing
-				switch (method) {
-					case 'GET': session.handleGet(request, response, userId);break;
-					case 'PUSH': session.handlePush(request, response, userId);break;
-					default: { 
-						throw {
-							msg: 'Invalid Method' + method 
-						}
-					} 
-				}
+				session.handleGet(request, response, userId);
 			}
 		}
 	} catch(err) {
 		console.log(err.msg)
+	} finally {
+		response.end();
 	}
 }
+
+SessionManager.prototype.handlePush = function(request, response, userId, docId, method) {
+	try {
+		if (this.sessions[docId] == undefined) {
+			throw {
+				msg: 'Push request for non-existent doc#' + docId
+			};
+		} else {
+			var session = this.sessions[docId];
+			if (session.state.userCursorPos[userId] == undefined) {
+				throw {
+					msg: 'Push request for non-existent user#' + userId + ' on doc#' + docId
+				};
+			} else {
+				session.handlePush(request, response, userId);
+			}
+		}
+	} catch(err) {
+		console.log(err.msg)
+	} finally {
+		response.end();
+	}
+}			
 
 
 /**
