@@ -2,8 +2,8 @@ var fs = require('fs');
 
 /**
  * required modules
- * @require rope Rope Data-Structure for maintaining server state
- * @require OT Operational Transformation
+ * @requires rope - maintains docState
+ * @requires OT - performs Operational-Transformation of operations 
  */
 var rope = require('./rope');
 var operationalTransform = require('./OT');
@@ -43,7 +43,7 @@ function State (docId, docPath) {
 }
 
 /**
- * @return {Number} Returns the synStamp of current-state of server`
+ * @return {Number} Returns the synStamp of current-state of doc
  */
 State.prototype.getSynStamp = function() {
 	return this.transformedOperations.length; 
@@ -57,7 +57,7 @@ State.prototype.getState = function() {
 }
 
 /**
- * apply operations to server-state
+ * apply operations to server-state of doc
  * @param operation {Object} edit-operation that needs to be performed.
  */
 State.prototype.applyToRope = function(operation) {
@@ -69,7 +69,7 @@ State.prototype.applyToRope = function(operation) {
 		}
 	} else if (operation.type == 'ERASE'){
 		if (operation.position < 0 || operation.position >= docState[docId].length) {
-			console.log('Invalid Erase Operation at' + operation.position);
+			console.log('Invalid Erase Operation at ' + operation.position);
 		} else {
 			this.docState.remove(operation.position, operation.position+1);
 		}
@@ -331,9 +331,11 @@ SessionManager.prototype.handleUnregister = function(userId, docId) {
 				switch (method) {
 					case 'GET': session.handleGet(request, response, userId);break;
 					case 'PUSH': session.handlePush(request, response, userId);break;
-					default: throw {
-								msg: 'Invalid Method' 
-							 }
+					default: { 
+						throw {
+							msg: 'Invalid Method' + method 
+						}
+					} 
 				}
 			}
 		}
