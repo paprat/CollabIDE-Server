@@ -1,3 +1,13 @@
+var fs = require('fs');
+
+/**
+ * required modules
+ * @require rope Rope Data-Structure for maintaining server state
+ * @require OT Operational Transformation
+ */
+var rope = require('./rope');
+var operationalTransform = require('./OT');
+
 /**
  * State is a class which maintains info about current server-state of Doc#docId and edits made during the session.
  * @constructor
@@ -14,7 +24,7 @@ function State (docId, docPath) {
 	this.operationsNotSaved = [];
 
 	//fixes \r\n issue in windows
-	var fileContent = fixEOL(fs.readFileSync(fileName).toString());
+	var fileContent = fixEOL(fs.readFileSync(docPath).toString());
 
 	//initialize the docState
 	this.docState = rope(fileContent);
@@ -40,7 +50,7 @@ State.prototype.getSynStamp = function() {
 }
 
 /**
- * @return {Number} Returns the current-state of server`
+ * @return {String} Returns the current-state of server`
  */
 State.prototype.getState = function() {
 	return this.docState.toString();
@@ -53,15 +63,15 @@ State.prototype.getState = function() {
 State.prototype.applyToRope = function(operation) {
 	if (operation.type == 'INSERT') {
 		if (operation.position < 0 || operation.position > docState[docId].length) {
-			console.log('Invalid Insert Operation');
+			console.log('Invalid Insert Operation at ' + operation.position + ' ' + operation.charToInsert);
 		} else {
-			state.insert(operation.position, operation.charToInsert);
+			this.docState.insert(operation.position, operation.charToInsert);
 		}
 	} else if (operation.type == 'ERASE'){
 		if (operation.position < 0 || operation.position >= docState[docId].length) {
-			console.log('Invalid Erase Operation');
+			console.log('Invalid Erase Operation at' + operation.position);
 		} else {
-			state.remove(operation.position, operation.position+1);
+			this.docState.remove(operation.position, operation.position+1);
 		}
 	} else {
 		console.log('Operation is undefined');
@@ -73,8 +83,8 @@ State.prototype.applyToRope = function(operation) {
  */
 State.prototype.cleanup = function() {
 	//performs all operation in buffer;
-	this.operationsNotSaved.foreach(function(operation) {
-			applyToRope(operation);
+	this.operationsNotSaved.forEach(function(operation) {
+			this.applyToRope(operation);
 	});
 	
 	//write docState to the file Doc#docId
@@ -83,6 +93,7 @@ State.prototype.cleanup = function() {
 			console.log(err);
 		}
 	});
+
 	//stops the write-callback from execution
 	clearInterval(this.interval);
 }
@@ -107,8 +118,8 @@ function Session(docId, docPath) {
  * @param userId {String} User's userId to be added to this session
  */
 Session.prototype.addUser = function(userId) {
-	userSynTime[userId] = this.session.getSynStamp();
-	userCursorPos[userId] = 0;
+	this.userSynTime[userId] = this.state.getSynStamp();
+	this.userCursorPos[userId] = 0;
 };
 
 
@@ -116,11 +127,11 @@ Session.prototype.addUser = function(userId) {
  * Removes the user from the session
  * @param userId {String} User's userId to be removed from this session
  */
-Session.prototype.removeUser() = function(userId) {
+Session.prototype.removeUser = function(userId) {
 	try {
-		if (userId in userSynStamp && userId in userCusrorPos) {
-			delete userSynStamp[userId];
-			delete userCursorPos[userId];
+		if (userId in this.userSynStamp && userId in this.userCusrorPos) {
+			delete this.userSynStamp[userId];
+			delete this.userCursorPos[userId];
 		} else {
 			//userId not found exception
 			throw {
@@ -147,7 +158,7 @@ Session.prototype.handlePush = function(request, response, userId) {
 	//bulk PUSH request received from User#userId
 	var operationsRecvd = request.body;
 	
-	operationsRecvd.foreach( function(operation) {
+	operationsRecvd.forEach( function(operation) {
 		
 		//transform the operation
 		var transformed = operationalTransform.transform(operation, this.localOperations);
@@ -168,7 +179,7 @@ Session.prototype.handlePush = function(request, response, userId) {
 			this.state.localOperations.push(cloned);
 
 			//update the server state of the doc
-			this.state.applyToRope(transformedOp);
+			this.state.applyToRope(transformed);
 			this.state.operationsNotSaved.push(transformed);
 
 			log('PUSH', operation);
@@ -202,12 +213,11 @@ Session.prototype.handleGet = function(request, response, userId) {
 		var operation = this.state.transformedOperations[i];
 		changesToSync.push(operation);
 		currentTimeStamp = operation.timeStamp + 1;
-		count++;
 	}
 	
 	if (changesToSync.length > 0) {
 		//send changes not yet synced
-		this.synTimeStamps[userId] = currentTimeStamp;
+		this.userSynTime[userId] = currentTimeStamp;
 		response.json(changesToSync);
 		response.end();
 	} else {
@@ -216,7 +226,7 @@ Session.prototype.handleGet = function(request, response, userId) {
 		for (var user in this.userCursorPos) {
 			repositionOperations.push(
 				{
-					type: 'REPOSITION'
+					type: 'REPOSITION',
 					userId: user,
 					synTimeStamp: this.state.getSynStamp(), 
 					position: this.userCursorPos[user]
@@ -231,7 +241,7 @@ Session.prototype.handleGet = function(request, response, userId) {
 /**
  * Clean-up the session from the server
  */
-Session.prototype.cleanup() = function() {
+Session.prototype.cleanup = function() {
 		this.state.cleanup();
 }
 
@@ -254,7 +264,7 @@ function SessionManager() {
  * @param docId {String} Doc's docId which user wants to edit.
  * @param docPath {String} Path of the doc on server.
  */
-var SessionManager.prototype.handleRegister (userId, docId, docPath) {
+SessionManager.prototype.handleRegister = function(userId, docId, docPath) {
 	if (this.sessions[docId] == undefined) {
 		this.sessions[docId] = new Session(docId, docPath);
 	} 
@@ -271,7 +281,7 @@ var SessionManager.prototype.handleRegister (userId, docId, docPath) {
  * @param docId {String} Doc's docId which user wants to edit.
  * @param docPath {String} Path of the doc on server.
  */
-var SessionManager.prototype.handleUnregister (userId, docId) {
+SessionManager.prototype.handleUnregister = function(userId, docId) {
 	try {
 		if (this.sessions[docId] != undefined) {
 			var session = sessions[docId];
@@ -283,12 +293,12 @@ var SessionManager.prototype.handleUnregister (userId, docId) {
 				}
 			} else {
 				throw {
-					msg: 'unregister request from non-existent user#' + userId;
-				};
+					msg: 'un-register request from non-existent user#' + userId
+				}
 			}
 		} else {
 			throw {
-				msg: 'unregister request from non-existent doc#' + docId;
+				msg: 'un-register request from non-existent doc#' + docId
 			};
 		}
 	} catch (err) {
@@ -304,23 +314,26 @@ var SessionManager.prototype.handleUnregister (userId, docId) {
  * @param userId {String} User's userId who has sent PUSH request.
  * @param docId {String} Doc's docId which user wants to edit.
  */
- var SessionManager.prototype.handleGet (request, response, userId, docId, method) {
+ SessionManager.prototype.handleGet = function(request, response, userId, docId, method) {
 	try {
-		if (this.session[docId] == undefined) {
+		if (this.sessions[docId] == undefined) {
 			throw {
-				msg: 'request for non-existent doc#' + docId;
+				msg: 'request for non-existent doc#' + docId
 			};
 		} else {
 			var session = this.sessions[docId];
 			if (session.state.userCursorPos[userId] == undefined) {
 				throw {
-					msg: 'request for non-existent user#' + userId + ' on doc#' + docId;
+					msg: 'request for non-existent user#' + userId + ' on doc#' + docId
 				};
 			} else {
 				//routing
 				switch (method) {
 					case 'GET': session.handleGet(request, response, userId);break;
 					case 'PUSH': session.handlePush(request, response, userId);break;
+					default: throw {
+								msg: 'Invalid Method' 
+							 }
 				}
 			}
 		}
@@ -343,7 +356,7 @@ var SessionManager.prototype.handleUnregister (userId, docId) {
  var DEBUG = true;
  function log(title, desc) {
 	 if (DEBUG) {
-		console.log(title + ':' + desc);
+		console.log(title + ': ' + desc);
 	 }
  }
  
@@ -355,13 +368,16 @@ var SessionManager.prototype.handleUnregister (userId, docId) {
  function fixEOL(content) {
 	var newContent = '';
 	//replace method isn't working so doing this manually
-	for (var i = 0; i < contents.length; i++) {
-		if (i < contents.length-1 && contents[i] == '\r' && contents[i+1] == '\n') {
+	for (var i = 0; i < content.length; i++) {
+		if ((i+1 < content.length) && (content[i]=='\r' && content[i+1]=='\n')) {
 			newContent += '\n';
 			i++;
 		} else {
-			newContent += contents[i];
+			newContent += content[i];
 		}
 	}
 	return newContent;
 }
+
+//Lets export
+if (typeof this === 'object') this.SessionManager = SessionManager;
