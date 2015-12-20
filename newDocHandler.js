@@ -1,5 +1,3 @@
-var DEBUG = true;
-
 /**
  * State is a class which maintains info about current server-state of Doc#docId and edits made during the session.
  * @constructor
@@ -19,13 +17,7 @@ function State (docId, docPath) {
 	var fileContent = fixEOL(fs.readFileSync(fileName).toString());
 
 	//initialize the docState
-	this.docState = rope('');
-	var constructDocState = function(content) {
-		for (int i = 0; i < content.length; i++) {
-			this.docState.insert(content);
-		}
-	}	
-	constructDocState(fileContent);
+	this.docState = rope(fileContent);
 	
 	// write state to the file every 2 minute interval
 	var THRESHOLD_TIME_MILLISECONDS = 12000; 
@@ -55,6 +47,50 @@ State.prototype.getState = function() {
 }
 
 /**
+ * apply operations to server-state
+ * @param operation {Object} edit-operation that needs to be performed.
+ */
+State.prototype.applyToRope = function(operation) {
+	if (operation.type == 'INSERT') {
+		if (operation.position < 0 || operation.position > docState[docId].length) {
+			console.log('Invalid Insert Operation');
+		} else {
+			state.insert(operation.position, operation.charToInsert);
+		}
+	} else if (operation.type == 'ERASE'){
+		if (operation.position < 0 || operation.position >= docState[docId].length) {
+			console.log('Invalid Erase Operation');
+		} else {
+			state.remove(operation.position, operation.position+1);
+		}
+	} else {
+		console.log('Operation is undefined');
+	}
+}
+
+/**
+ * writes docState to file and stops the periodic write-callback from execution
+ */
+State.prototype.cleanup = function() {
+	//performs all operation in buffer;
+	this.operationsNotSaved.foreach(function(operation) {
+			applyToRope(operation);
+	});
+	
+	//write docState to the file Doc#docId
+	fs.writeFile(this.docPath, this.docState, function(err) {
+		if(err) {
+			console.log(err);
+		}
+	});
+	//stops the write-callback from execution
+	clearInterval(this.interval);
+}
+
+
+
+
+/**
  * Session is a wrapper class which maintains the state, info about active users, their respective state-pulling time-stamps and cursor-positions  
  * @constructor
  * @param docId {String} docId of Doc, to be edited
@@ -68,7 +104,7 @@ function Session(docId, docPath) {
 
 /**
  * Adds the user to the session
- * @param {String} userId - User's userId to be added to this session
+ * @param userId {String} User's userId to be added to this session
  */
 Session.prototype.addUser = function(userId) {
 	userSynTime[userId] = this.session.getSynStamp();
@@ -78,7 +114,7 @@ Session.prototype.addUser = function(userId) {
 
 /**
  * Removes the user from the session
- * @param {String} userId - User's userId to be removed from this session
+ * @param userId {String} User's userId to be removed from this session
  */
 Session.prototype.removeUser() = function(userId) {
 	try {
@@ -180,6 +216,7 @@ Session.prototype.handleGet = function(request, response, userId) {
 		for (var user in this.userCursorPos) {
 			repositionOperations.push(
 				{
+					type: 'REPOSITION'
 					userId: user,
 					synTimeStamp: this.state.getSynStamp(), 
 					position: this.userCursorPos[user]
@@ -192,19 +229,30 @@ Session.prototype.handleGet = function(request, response, userId) {
 }
 
 /**
+ * Clean-up the session from the server
+ */
+Session.prototype.cleanup() = function() {
+		this.state.cleanup();
+}
+
+
+
+
+
+/**
  * SessionManager is a class whose objective is to create, maintain sessions. It also route user-requests to appropriate sessions    
  * @constructor
  */
- var SessionManager = function() {
+function SessionManager() {
 	this.sessions = {};
 }
 
 /**
  * Creates a new session for Doc#docId, if none exists. Else uses an existing session. Adds the User#userId to the session. 
  * @return {String} current state of the doc#docID.
- * @param {String} userId - User's userId who has sent REGISTER request.
- * @param {String} docId - Doc's docId which user wants to edit.
- * @param {String} docPath - Path of the doc on server.
+ * @param userId {String} User's userId who has sent REGISTER request.
+ * @param docId {String} Doc's docId which user wants to edit.
+ * @param docPath {String} Path of the doc on server.
  */
 var SessionManager.prototype.handleRegister (userId, docId, docPath) {
 	if (this.sessions[docId] == undefined) {
@@ -219,16 +267,16 @@ var SessionManager.prototype.handleRegister (userId, docId, docPath) {
 /**
  * Removes the User#userId to the session. Destroys it if no user is currently editing the doc.
  *
- * @param {String} userId - User's userId who has sent REGISTER request.
- * @param {String} docId - Doc's docId which user wants to edit.
- * @param {String} docPath - Path of the doc on server.
+ * @param userId {String} User's userId who has sent REGISTER request.
+ * @param docId {String} Doc's docId which user wants to edit.
+ * @param docPath {String} Path of the doc on server.
  */
 var SessionManager.prototype.handleUnregister (userId, docId) {
 	try {
 		if (this.sessions[docId] != undefined) {
 			var session = sessions[docId];
 			if (session.userCursorPos[userId] != undefined) {
-				session.removeUser(userId
+				session.removeUser(userId)
 				if (session.getUserCount() == 0) {
 					session.cleanup();
 					delete this.sessions[docId];
@@ -249,14 +297,14 @@ var SessionManager.prototype.handleUnregister (userId, docId) {
 }
 
 /**
- * Checks for validity of requests. Forwards requests to session Doc#docId, if one exists.
+ * Checks for validity of requests. Routes requests to session Doc#docId, if one exists.
  *
- * @param {Object} request  - User's request object
- * @param {Object} response - User's response object
- * @param {String} userId - User's userId who has sent PUSH request.
- * @param {String} docId - Doc's docId which user wants to edit.
+ * @param request {Object} User's request object
+ * @param response {Object} User's response object
+ * @param userId {String} User's userId who has sent PUSH request.
+ * @param docId {String} Doc's docId which user wants to edit.
  */
- var SessionManager.prototype.handleGet (request, response, userId, docId) {
+ var SessionManager.prototype.handleGet (request, response, userId, docId, method) {
 	try {
 		if (this.session[docId] == undefined) {
 			throw {
@@ -269,10 +317,51 @@ var SessionManager.prototype.handleUnregister (userId, docId) {
 					msg: 'request for non-existent user#' + userId + ' on doc#' + docId;
 				};
 			} else {
-				//routing table
+				//routing
+				switch (method) {
+					case 'GET': session.handleGet(request, response, userId);break;
+					case 'PUSH': session.handlePush(request, response, userId);break;
+				}
 			}
 		}
 	} catch(err) {
 		console.log(err.msg)
 	}
+}
+
+
+/**
+ * Utility Functions
+ *
+ */
+ 
+ /**
+ * Perform logging, can be redirected if needed. 
+ * @param title {String} Title of logged message.
+ * @param desc {String} Description of logged message.
+ */
+ var DEBUG = true;
+ function log(title, desc) {
+	 if (DEBUG) {
+		console.log(title + ':' + desc);
+	 }
+ }
+ 
+ /**
+ * fix 'End of Line' issues. 
+ * @param content {String} content whose EOL need to be fixed.
+ * @return {String} content with '\r\n' replaced by '\n'.
+ */
+ function fixEOL(content) {
+	var newContent = '';
+	//replace method isn't working so doing this manually
+	for (var i = 0; i < contents.length; i++) {
+		if (i < contents.length-1 && contents[i] == '\r' && contents[i+1] == '\n') {
+			newContent += '\n';
+			i++;
+		} else {
+			newContent += contents[i];
+		}
+	}
+	return newContent;
 }
